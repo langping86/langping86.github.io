@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-03T02:32:02.000Z</updated>
+  <updated>2016-09-03T04:05:21.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac OS 常用快捷键</title>
+    <link href="http://yoursite.com/2016/09/03/Mac-OS-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>http://yoursite.com/2016/09/03/Mac-OS-常用快捷键/</id>
+    <published>2016-09-03T03:50:38.000Z</published>
+    <updated>2016-09-03T04:05:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>option</strong>  强制关闭，wifi详细<br><strong>option shfit</strong>    微调</p>
+<p><strong>ctrl+shfit+power</strong>               锁屏<br><strong>command+shfit+3</strong>              全屏截屏<br><strong>command+shfit+4</strong>      区域截屏<br><strong>command+shfit+esc</strong>  任务管理器<br><strong>command+tap</strong>             切换<br><strong>command+ctrl+N</strong>        新建文件夹，会将选中文件放入文件夹中</p>
+<blockquote>
+<p>有些快捷键可以通过<strong>alfred</strong> 实现。</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;option&lt;/strong&gt;  强制关闭，wifi详细&lt;br&gt;&lt;strong&gt;option shfit&lt;/strong&gt;    微调&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ctrl+shfit+power&lt;/strong&gt;               锁屏&lt;br&gt;
+    
+    </summary>
+    
+      <category term="mac" scheme="http://yoursite.com/categories/mac/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Mac OS 拼音输入法</title>
