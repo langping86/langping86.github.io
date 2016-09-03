@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-03T04:05:21.000Z</updated>
+  <updated>2016-09-03T15:14:16.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,19 +20,63 @@
     <link href="http://yoursite.com/2016/09/03/Mac-OS-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     <id>http://yoursite.com/2016/09/03/Mac-OS-常用快捷键/</id>
     <published>2016-09-03T03:50:38.000Z</published>
-    <updated>2016-09-03T04:05:21.000Z</updated>
+    <updated>2016-09-03T15:14:16.000Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>option</strong>  强制关闭，wifi详细<br><strong>option shfit</strong>    微调</p>
-<p><strong>ctrl+shfit+power</strong>               锁屏<br><strong>command+shfit+3</strong>              全屏截屏<br><strong>command+shfit+4</strong>      区域截屏<br><strong>command+shfit+esc</strong>  任务管理器<br><strong>command+tap</strong>             切换<br><strong>command+ctrl+N</strong>        新建文件夹，会将选中文件放入文件夹中</p>
+    <content type="html"><![CDATA[<blockquote>
+<p>近期一直在熟悉<strong>Mac OS</strong>系统的使用，对于一个长期使用Windows的用户来说，各方面都需要适应，今天就总结下常用的快捷键，应该基本上可满足日常应用。</p>
+</blockquote>
+<h2 id="切换"><a href="#切换" class="headerlink" title="切换"></a>切换</h2><p><strong>⌘ ＋Tab</strong> 程序之间切换</p>
+<h2 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h2><p><strong>⌘＋H</strong> 隐藏窗口</p>
+<p><strong>⌘＋M</strong> 最小化窗口</p>
+<p><strong>⌘＋N</strong> 新建</p>
+<p><strong>⌘＋O</strong> 打开</p>
+<p><strong>⌘＋S</strong> 保存</p>
+<p><strong>⌘＋Shfit＋S</strong> 另存为</p>
+<p><strong>⌘＋P</strong> 打印</p>
+<p><strong>⌘＋W</strong> 关闭</p>
+<p><strong>⌘＋Q</strong> 退出</p>
+<h2 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h2><p><strong>空格键</strong> 选中文件后按下<strong>空格键</strong>可以快速查看（<strong><em>如何快速查看markdown\csv\json等格式？</em></strong>）</p>
+<p><strong>⌘＋A</strong> 全选</p>
+<p><strong>⌘＋I</strong> 现实简介</p>
+<p><strong>⌘＋F</strong> 搜索</p>
+<p><strong>⌘＋C</strong> 复制</p>
+<p><strong>⌘＋V</strong> 粘贴</p>
+<p><strong>⌘＋delete</strong> 删除（⌘＋delete 还可以文字输入时删除光标前的整行）</p>
+<p><strong>⌘＋shift＋delete</strong> 清空回收站</p>
+<p><strong>⌘＋control＋N</strong>        新建文件夹，会将选中文件放入文件夹中</p>
+<h2 id="截屏"><a href="#截屏" class="headerlink" title="截屏"></a>截屏</h2><p><strong>⌘＋shift＋3</strong> 截取整个屏幕</p>
+<p><strong>⌘＋shift＋4</strong> 截取选择区域</p>
+<p><strong>⌘＋shift＋4＋空格</strong> 截取选择窗口</p>
+<h2 id="浏览器-safari"><a href="#浏览器-safari" class="headerlink" title="浏览器 safari"></a>浏览器 safari</h2><p><strong>⌘＋R</strong> 刷新</p>
+<p><strong>⌘＋T</strong> 新建一个选项卡</p>
+<p><strong>⌘＋Z</strong> 打开上一个关闭的选项卡</p>
+<p><strong>⌘＋➕</strong> 放大（当然也可以使用触摸板操作）</p>
+<p><strong>⌘＋➖</strong> 缩小（当然也可以通过触摸板操作）</p>
+<h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><p><strong>control ＋shift＋⎋</strong>  关闭显示器</p>
+<p><strong>⌘＋shift＋esc</strong> 强制退出程序</p>
+<p><strong>⌘＋option ＋⎋</strong> 睡眠</p>
+<p><strong>⌘＋option＋esc</strong> 打开任务管理器</p>
+<p><strong>⌘＋空格</strong> 呼出spolight search（To search for everything）</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p><strong>option</strong></p>
+<ul>
+<li>当某个应用程序卡死的时候，可以在Dock栏右键选中应用，按下<code>option</code>，可以看到<strong>强制退出</strong></li>
+<li>按下<code>option</code>键，在菜单栏点选wifi图标时，可以看到当前连接网络的详细信息</li>
+</ul>
+<p><strong>option＋shfit</strong>    微调，（在最小化窗口的时候，可以按下<code>option＋shift</code> 可以看到最小化的速度减慢了）</p>
 <blockquote>
-<p>有些快捷键可以通过<strong>alfred</strong> 实现。</p>
+<ol>
+<li>另外Mac上快捷键那么多，都靠脑袋记住也不现实，Mac的用户也想到了这一点，推荐一个<a href="https://cheatsheetapp.com/CheatSheet/" target="_blank" rel="external"><strong>CheatSheet</strong></a>应用。</li>
+<li>使用Mac的人不得不去了解下<strong><a href="https://www.alfredapp.com" target="_blank" rel="external">Alfred</a></strong>，spotlight search 功能增强，结合其workflow功能，强大好用。</li>
+</ol>
 </blockquote>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;option&lt;/strong&gt;  强制关闭，wifi详细&lt;br&gt;&lt;strong&gt;option shfit&lt;/strong&gt;    微调&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;ctrl+shfit+power&lt;/strong&gt;               锁屏&lt;br&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;近期一直在熟悉&lt;strong&gt;Mac OS&lt;/strong&gt;系统的使用，对于一个长期使用Windows的用户来说，各方面都需要适应，今天就总结下常用的快捷键，应该基本上可满足日常应用。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;切换&quot;&gt;&lt;
     
     </summary>
     
