@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>马拴宝</title>
+  <title>｛am｝shuanbao</title>
   <subtitle>Life and Programming</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-03T15:14:16.000Z</updated>
+  <updated>2016-09-04T03:57:51.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/09/03/Mac-OS-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     <id>http://yoursite.com/2016/09/03/Mac-OS-常用快捷键/</id>
     <published>2016-09-03T03:50:38.000Z</published>
-    <updated>2016-09-03T15:14:16.000Z</updated>
+    <updated>2016-09-04T03:57:51.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>近期一直在熟悉<strong>Mac OS</strong>系统的使用，对于一个长期使用Windows的用户来说，各方面都需要适应，今天就总结下常用的快捷键，应该基本上可满足日常应用。</p>
@@ -31,7 +31,7 @@
 <p><strong>⌘＋N</strong> 新建</p>
 <p><strong>⌘＋O</strong> 打开</p>
 <p><strong>⌘＋S</strong> 保存</p>
-<p><strong>⌘＋Shfit＋S</strong> 另存为</p>
+<p><strong>⌘＋Shift＋S</strong> 另存为</p>
 <p><strong>⌘＋P</strong> 打印</p>
 <p><strong>⌘＋W</strong> 关闭</p>
 <p><strong>⌘＋Q</strong> 退出</p>
@@ -62,7 +62,7 @@
 <li>当某个应用程序卡死的时候，可以在Dock栏右键选中应用，按下<code>option</code>，可以看到<strong>强制退出</strong></li>
 <li>按下<code>option</code>键，在菜单栏点选wifi图标时，可以看到当前连接网络的详细信息</li>
 </ul>
-<p><strong>option＋shfit</strong>    微调，（在最小化窗口的时候，可以按下<code>option＋shift</code> 可以看到最小化的速度减慢了）</p>
+<p><strong>option＋shift</strong>    微调，（在最小化窗口的时候，可以按下<code>option＋shift</code> 可以看到最小化的速度减慢了）</p>
 <blockquote>
 <ol>
 <li>另外Mac上快捷键那么多，都靠脑袋记住也不现实，Mac的用户也想到了这一点，推荐一个<a href="https://cheatsheetapp.com/CheatSheet/" target="_blank" rel="external"><strong>CheatSheet</strong></a>应用。</li>
@@ -80,8 +80,8 @@
     
     </summary>
     
-      <category term="mac" scheme="http://yoursite.com/categories/mac/"/>
     
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
     
   </entry>
   
@@ -90,24 +90,23 @@
     <link href="http://yoursite.com/2016/08/31/Mac-OS-%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%B3%95/"/>
     <id>http://yoursite.com/2016/08/31/Mac-OS-拼音输入法/</id>
     <published>2016-08-31T13:11:13.000Z</published>
-    <updated>2016-09-03T02:32:02.000Z</updated>
+    <updated>2016-09-04T03:56:39.000Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a> 
-<h2 id="1-中英文切换"><a href="#1-中英文切换" class="headerlink" title="1.中英文切换"></a>1.中英文切换</h2><p>点亮<code>caps lock</code>可输入英文，需要输入大写英文再按下<code>shift</code>即可。</p>
-<h2 id="2-标点符号"><a href="#2-标点符号" class="headerlink" title="2.标点符号"></a>2.标点符号</h2><p><code>shift + option + B</code>  符号、数字甚至是单位可供选择</p>
-<h2 id="3-表情符号"><a href="#3-表情符号" class="headerlink" title="3.表情符号"></a>3.表情符号</h2><p><code>shfit ＋ 6</code></p>
-<h2 id="4-生僻字"><a href="#4-生僻字" class="headerlink" title="4.生僻字"></a>4.生僻字</h2><p>同时输入分拆的字音，按下<code>shift ＋ space</code><br>如：森，输入<code>mu mu mu</code>，按下<code>shift ＋ space</code></p>
+    <content type="html"><![CDATA[<h2 id="中英文切换"><a href="#中英文切换" class="headerlink" title="中英文切换"></a>中英文切换</h2><p>点亮<code>caps lock</code>可输入英文，需要输入大写英文再按下<code>shift</code>即可。</p>
+<h2 id="标点符号"><a href="#标点符号" class="headerlink" title="标点符号"></a>标点符号</h2><p><code>shift + option + B</code>  符号、数字甚至是单位可供选择</p>
+<p>shift+option+9 分隔符<code>·</code></p>
+<h2 id="字符表情"><a href="#字符表情" class="headerlink" title="字符表情"></a>字符表情</h2><p><code>shift ＋ 6</code></p>
+<h2 id="生僻字"><a href="#生僻字" class="headerlink" title="生僻字"></a>生僻字</h2><p>同时输入分拆的字音，按下<code>shift ＋ space</code><br>如：森，输入<code>mu mu mu</code>，按下<code>shift ＋ space</code></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt; 
-&lt;h2 id=&quot;1-中英文切换&quot;&gt;&lt;a href=&quot;#1-中英文切换&quot; class=&quot;headerlink&quot; title=&quot;1.中英文切换&quot;&gt;&lt;/a&gt;1.中英文切换&lt;/h2&gt;&lt;p&gt;点亮&lt;code&gt;caps lock&lt;/code&gt;可输入英文，需
+      &lt;h2 id=&quot;中英文切换&quot;&gt;&lt;a href=&quot;#中英文切换&quot; class=&quot;headerlink&quot; title=&quot;中英文切换&quot;&gt;&lt;/a&gt;中英文切换&lt;/h2&gt;&lt;p&gt;点亮&lt;code&gt;caps lock&lt;/code&gt;可输入英文，需要输入大写英文再按下&lt;code&gt;shift&lt;/code
     
     </summary>
     
-      <category term="mac" scheme="http://yoursite.com/categories/mac/"/>
     
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
     
   </entry>
   
@@ -116,7 +115,7 @@
     <link href="http://yoursite.com/2016/08/31/hello-world/"/>
     <id>http://yoursite.com/2016/08/31/hello-world/</id>
     <published>2016-08-31T04:56:17.000Z</published>
-    <updated>2016-09-03T02:31:41.000Z</updated>
+    <updated>2016-09-04T03:40:16.000Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br><a id="more"></a> </p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
