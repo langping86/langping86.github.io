@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-04T03:57:51.000Z</updated>
+  <updated>2016-09-06T07:03:13.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,71 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java知识梳理</title>
+    <link href="http://yoursite.com/2016/09/05/Java%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/"/>
+    <id>http://yoursite.com/2016/09/05/Java知识梳理/</id>
+    <published>2016-09-05T14:46:33.000Z</published>
+    <updated>2016-09-06T07:03:13.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>作为一个长期写企业管理软件开发的从业人员，我越来越觉得在“埋头做事”的同时，需要时常“抬头看路”，总结下Java学习路线。</p>
+<ol>
+<li><p>Hello World</p>
+<p>我想大部分的程序员都写过<code>Hello World</code>,但我要说的不仅仅是能在控制台输出<code>Hello World</code>，还包括程序语言的基本功能（变量、分支判断、循环控制、类、接口、对象等）。</p>
+<p>通过<code>Hello World</code>，了解基本的开发环境搭建、代码编写、编译、运行、Debug；了解开发工具的基本使用，代码视图、资源视图、调试视图等。</p>
+</li>
+<li><p>基础</p>
+<p>这里说的基础不是一个大而全的东西，也就是最基本、最常用的内容。</p>
+<ul>
+<li>面向对象（OOP）</li>
+<li>lang（String、封装类）、Collections、concurrent、io</li>
+</ul>
+</li>
+<li><p>技能</p>
+<p>学习技术的目的是为了解决实际问题，在掌握基础的<strong>同时</strong>学习一些技能，通常可让我们更好、更快的解决问题。</p>
+<p>说技能太泛了，到底我们该学哪些内容？可是，过来人说过不管你学多少总是不够的。</p>
+<p>Spring －－ IoC、DI、AOP<br>View   －－Velocity、Freemarker、Html、CSS、JavaScript<br>Web Framework －－ Struts、SpringMVC、JSF<br>NoSQL －－ Redis（偏向缓存应用）、MongoDB、HBase<br>SQL      －－MySql、Oracle<br>Data Access －－ MyBatis、Hibernate、Spring Data</p>
+</li>
+<li><p>延伸</p>
+<p>JVM：从JVM层面分析对象的内存使用、线程的调度运行和延时情况。</p>
+<p><strong>网络I/O模型</strong><br>BIO －－》Socket Stream</p>
+<p>NIO －－》Netty，Mina</p>
+<p>AIO －－》JDK7 Nio 2</p>
+</li>
+</ol>
+<blockquote>
+<p>NIO相关的衍生技术</p>
+<ol>
+<li>NIO(Java New IO)    与传统IO的区别</li>
+<li>NIO框架：Netty、mina</li>
+<li>分布式服务框架：<a href="http://dubbo.io" target="_blank" rel="external">Dubbo</a>、<a href="http://zookeeper.apache.org" target="_blank" rel="external">Zookeeper</a></li>
+</ol>
+</blockquote>
+<ol>
+<li><p>指引</p>
+<p>也许我们把上面的都学完了，但是还是做不出一个像样的系统，是因为上面的内容紧紧是内容，如何学并学的快是我们所希望的。推荐两个BLOG，指引我们该如何学。</p>
+<ul>
+<li><a href="http://blog.xdite.net" target="_blank" rel="external">http://blog.xdite.net</a></li>
+<li><a href="http://xiaolai.github.io" target="_blank" rel="external">http://xiaolai.li</a></li>
+</ul>
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;作为一个长期写企业管理软件开发的从业人员，我越来越觉得在“埋头做事”的同时，需要时常“抬头看路”，总结下Java学习路线。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Hello World&lt;/p&gt;
+&lt;p&gt;我想大部分的程序员都写过&lt;code&gt;Hello World&lt;/code&gt;,但我要
+    
+    </summary>
+    
+    
+      <category term="编程技术整理" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>Mac OS 常用快捷键</title>
