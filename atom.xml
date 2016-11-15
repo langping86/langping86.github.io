@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-15T07:59:36.000Z</updated>
+  <updated>2016-09-25T05:15:28.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,108 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>What&#39;s in iOS?</title>
-    <link href="http://yoursite.com/2016/11/15/What-s-in-iOS/"/>
-    <id>http://yoursite.com/2016/11/15/What-s-in-iOS/</id>
-    <published>2016-11-15T07:57:56.000Z</published>
-    <updated>2016-11-15T07:59:36.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Note: Developing Applications for iOS(Stanford CS193p)<br><strong>1.Tech Map</strong></p>
-<blockquote>
-<ul>
-<li>Cocoa Touch </li>
-<li>Media</li>
-<li>Core Services</li>
-<li>Core OS</li>
-</ul>
-</blockquote>
-<p><strong>2.Core OS</strong></p>
-<blockquote>
-<ul>
-<li>OSX Kernel </li>
-<li>Power Management</li>
-<li>Mach 3.0</li>
-<li>keychain Access</li>
-<li>BSD</li>
-<li>Certifications</li>
-<li>Sockets</li>
-<li>File System</li>
-<li>Security</li>
-<li>Bonjour</li>
-</ul>
-</blockquote>
-<p><strong>3.Core Services</strong></p>
-<blockquote>
-<ul>
-<li>Collections </li>
-<li>Core Location</li>
-<li>Address Book</li>
-<li>Net Services</li>
-<li>Networking</li>
-<li>Threading</li>
-<li>File Access</li>
-<li>Preferences</li>
-<li>SQLite</li>
-<li>URL Utilities</li>
-</ul>
-</blockquote>
-<p><strong>4.Media</strong></p>
-<blockquote>
-<ul>
-<li>Core audio </li>
-<li>OpenAL</li>
-<li>Audio Mixing</li>
-<li>Audio Recording</li>
-<li>Video Playback</li>
-<li>JPEG,PNG,TIFF</li>
-<li>PDF</li>
-<li>Quartz(2D)</li>
-<li>Core Animation</li>
-<li>OpenGL ES</li>
-</ul>
-</blockquote>
-<p><strong>5.Cocoa Touch</strong></p>
-<blockquote>
-<ul>
-<li>Multi-Touch</li>
-<li>Core Motion</li>
-<li>View Hierarchy</li>
-<li>Localization</li>
-<li>Controls</li>
-<li>Alerts</li>
-<li>Web View</li>
-<li>Map Kit</li>
-<li>Image Picker</li>
-<li>Camera</li>
-</ul>
-</blockquote>
-<p><strong>6.Platform Components</strong></p>
-<blockquote>
-<ul>
-<li>Tools: Xcode、Instruments</li>
-<li>Language：Swift、Objective-C</li>
-<li>Frameworks：Foundation、Core Data、UIKit、Core Motion、Map Kit</li>
-<li>Design Strategy：MVC</li>
-</ul>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Note: Developing Applications for iOS(Stanford CS193p)&lt;br&gt;&lt;strong&gt;1.Tech Map&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;Cocoa Touch &lt;/li&gt;
-&lt;li&gt;Med
-    
-    </summary>
-    
-    
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
-    
-  </entry>
   
   <entry>
     <title>Docker入门学习</title>
