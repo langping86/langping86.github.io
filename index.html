@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -45,7 +45,11 @@
   
 
   
+    
+      
+    
 
+    
   
 
   
@@ -54,8 +58,16 @@
 
   
     
+      
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -65,7 +77,7 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -79,7 +91,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -99,8 +111,8 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -111,8 +123,8 @@
       applicationID: '',
       apiKey: '',
       indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+      hits: "",
+      labels: ""
     }
   };
 </script>
@@ -146,7 +158,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
+  <div class="container one-collumn sidebar-position-right 
    page-home 
  ">
     <div class="headband"></div>
@@ -186,6 +198,16 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -274,14 +296,6 @@
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-15T17:17:23+08:00">
-                2016-11-15
-              </time>
-            
 
             
 
@@ -316,86 +330,28 @@
       
         
           
-            <p>Note: Developing Applications for iOS(Stanford CS193p)<br><strong>1.Tech Map</strong></p>
-<blockquote>
-<ul>
-<li>Cocoa Touch </li>
-<li>Media</li>
-<li>Core Services</li>
-<li>Core OS</li>
-</ul>
-</blockquote>
-<p><strong>2.Core OS</strong></p>
-<blockquote>
-<ul>
-<li>OSX Kernel </li>
-<li>Power Management</li>
-<li>Mach 3.0</li>
-<li>keychain Access</li>
-<li>BSD</li>
-<li>Certifications</li>
-<li>Sockets</li>
-<li>File System</li>
-<li>Security</li>
-<li>Bonjour</li>
-</ul>
-</blockquote>
-<p><strong>3.Core Services</strong></p>
-<blockquote>
-<ul>
-<li>Collections </li>
-<li>Core Location</li>
-<li>Address Book</li>
-<li>Net Services</li>
-<li>Networking</li>
-<li>Threading</li>
-<li>File Access</li>
-<li>Preferences</li>
-<li>SQLite</li>
-<li>URL Utilities</li>
-</ul>
-</blockquote>
-<p><strong>4.Media</strong></p>
-<blockquote>
-<ul>
-<li>Core audio </li>
-<li>OpenAL</li>
-<li>Audio Mixing</li>
-<li>Audio Recording</li>
-<li>Video Playback</li>
-<li>JPEG,PNG,TIFF</li>
-<li>PDF</li>
-<li>Quartz(2D)</li>
-<li>Core Animation</li>
-<li>OpenGL ES</li>
-</ul>
-</blockquote>
-<p><strong>5.Cocoa Touch</strong></p>
-<blockquote>
-<ul>
-<li>Multi-Touch</li>
-<li>Core Motion</li>
-<li>View Hierarchy</li>
-<li>Localization</li>
-<li>Controls</li>
-<li>Alerts</li>
-<li>Web View</li>
-<li>Map Kit</li>
-<li>Image Picker</li>
-<li>Camera</li>
-</ul>
-</blockquote>
-<p><strong>6.Platform Components</strong></p>
-<blockquote>
-<ul>
-<li>Tools: Xcode、Instruments</li>
-<li>Language：Swift、Objective-C</li>
-<li>Frameworks：Foundation、Core Data、UIKit、Core Motion、Map Kit</li>
-<li>Design Strategy：MVC</li>
-</ul>
-</blockquote>
+          Note: Developing Applications for iOS(Stanford CS193p)1.Tech Map
 
-          
+
+Cocoa Touch 
+Media
+Core Services
+Core OS
+
+
+2.Core OS
+
+
+OSX Kernel 
+Power Management
+          ...
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/11/15/What-s-in-iOS/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -468,14 +424,6 @@
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-09-25T12:13:00+08:00">
-                2016-09-25
-              </time>
-            
 
             
 
@@ -510,19 +458,18 @@
       
         
           
-            <p><strong>1. 学习资源</strong><br><strong>1.1 </strong><a href="http://www.docker.com" title="Docker WebSite" target="_blank" rel="external">Docker 官网</a><br><strong>1.2 </strong><a href="https://hub.docker.com" title="docker hub" target="_blank" rel="external">Docker Hub</a><br><strong>1.3 </strong>推荐入门书籍《<a href="https://yeasy.gitbooks.io/docker_practice/content" target="_blank" rel="external">Docker技术入门与实践</a>》（本书是开源在gitbook上）</p>
-<p><strong>2.</strong> 具体使用<br><strong>2.0 </strong>安装Docker</p>
-<blockquote>
-<p>新版本的Docker提供了对原生Mac OS、Windows安装程序，可以直接在官网下载安装即可。我本地使用的Docker for Mac。</p>
-</blockquote>
-<p><strong>2.1 </strong>在Docker 中运行mysql<br>(1)下载mysql镜像<br>    docker pull mysql<br>(2)通过容器，启动mysql镜像<br>    docker run -d -p 127.0.0.1:3306:3306 –name mysql -v /Users/kevin/Docker/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=”123456” mysql:latest</p>
-<p> 命令说明：</p>
-<blockquote>
-<p>docker run : Run a command in a new container<br>-d(detach): 以后台模式运行容器，只能通过网络资源或者共享卷进行I/O数据交互<br>-p (publish):相对于访问主机来讲，是将主机的端口映射到容器的端口；相对于容器来说，是将容器的端口发布给主机使用。此例中-p 127.0.0.1:3306:3306，主机是127.0.0.1、端口是：3306，这样访问主机的3306端口就可以访问容器的3306端口<br>–name :给容器取名<br>-v :将本机的文件目录(/Users/kevin/Docker/mysql/data)挂载到对应的容器目录(/var/lib/mysql)。这样可以通过数据卷实现容器中数据的持久化。<br>-e :环境变量，本例中设置mysql root用户的初始密码为123456</p>
-</blockquote>
-<p>(3)上面已经启动了容器，可以用mysql客户端连接使用了。不需要使用的时候，可以选择停掉。<br>    docker stop mysql</p>
+          1. 学习资源1.1 Docker 官网1.2 Docker Hub1.3 推荐入门书籍《Docker技术入门与实践》（本书是开源在gitbook上）
+2. 具体使用2.0 安装Docker
 
-          
+新版本的Docker提供了对原生Mac OS、Windows安装程序，可以直接在官网下载安装即可。我本地使
+          ...
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/09/25/Docker 简单入门/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -595,14 +542,6 @@
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-09-05T22:46:33+08:00">
-                2016-09-05
-              </time>
-            
 
             
 
@@ -637,40 +576,15 @@
       
         
           
-            <p>作为一个长期写企业管理软件开发的从业人员，我越来越觉得在“埋头做事”的同时，需要时常“抬头看路”，总结下Java学习路线。<br><strong>{0}Hello World</strong><br>我想大部分的程序员都写过<code>Hello World</code>,但我要说的不仅仅是能在控制台输出<code>Hello World</code>，还包括程序语言的基本功能（变量、分支判断、循环控制、类、接口、对象等）。</p>
-<blockquote>
-<p>通过<code>Hello World</code>，了解基本的开发环境搭建、代码编写、编译、运行、Debug；了解开发工具的基本使用，代码视图、资源视图、调试视图等。</p>
-</blockquote>
-<p><strong>{1}基础</strong></p>
-<blockquote>
-<p>这里说的基础不是一个大而全的东西，也就是最基本、最常用的内容。<br>(1)面向对象（OOP）<br>(2)lang（String、封装类）、Collections、concurrent、io</p>
-</blockquote>
-<p><strong>{2}技能</strong><br>学习技术的目的是为了解决实际问题，在掌握基础的<strong>同时</strong>学习一些技能，通常可让我们更好、更快的解决问题。说技能太泛了，到底我们该学哪些内容？</p>
-<blockquote>
-<p>(1)Spring：IoC、DI、AOP<br>(2)View：Velocity、Freemarker、Html、CSS、JavaScript<br>(3)Web Framework： Struts、SpringMVC、JSF<br>(4)NoSQL：Redis（偏向缓存应用）、MongoDB、HBase<br>(5)SQL：MySql、Oracle<br>(6)Data Access：MyBatis、Hibernate、Spring Data</p>
-</blockquote>
-<p><strong>{3}延伸</strong><br>(1)JVM：从JVM层面分析对象的内存使用、线程的调度运行和延时情况。<br>(2)网络I/O模型</p>
-<blockquote>
-<ul>
-<li>BIO －－》Socket Stream</li>
-<li>NIO －－》Netty，Mina</li>
-<li>AIO －－》JDK7 NIO2</li>
-</ul>
-</blockquote>
-<p>(3)NIO相关的衍生技术</p>
-<blockquote>
-<ol>
-<li>NIO(Java New IO)    与传统IO的区别</li>
-<li>NIO框架：Netty、mina</li>
-<li>分布式服务框架：[Dubbo][1]、[Zookeeper][2]</li>
-</ol>
-</blockquote>
-<p><strong>{4}指引</strong><br>也许我们把上面的都学完了，但是还是做不出一个像样的系统，是因为上面的内容紧紧是内容，如何学并学的快是我们所希望的。推荐两个BLOG，也许会给我们一些启发。</p>
-<blockquote>
-<p>   (1)<a href="http://blog.xdite.net" target="_blank" rel="external">http://blog.xdite.net</a><br>   (2)<a href="http://xiaolai.li" target="_blank" rel="external">http://xiaolai.li</a></p>
-</blockquote>
-
-          
+          作为一个长期写企业管理软件开发的从业人员，我越来越觉得在“埋头做事”的同时，需要时常“抬头看路”，总结下Java学习路线。{0}Hello World我想大部分的程序员都写过Hello World,但我要说的不仅仅是能在控制台输出Hello World，还包括程序语言的基本功能（变量、分支判断、循环
+          ...
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/09/05/Java知识梳理/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -743,14 +657,6 @@
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-09-03T11:50:38+08:00">
-                2016-09-03
-              </time>
-            
 
             
 
@@ -785,55 +691,25 @@
       
         
           
-            <blockquote>
-<p>近期一直在熟悉<strong>Mac OS</strong>系统的使用，对于一个长期使用Windows的用户来说，各方面都需要适应，今天就总结下常用的快捷键，应该基本上可满足日常应用。</p>
-</blockquote>
-<h2 id="切换"><a href="#切换" class="headerlink" title="切换"></a>切换</h2><p><strong>⌘ ＋Tab</strong> 程序之间切换</p>
-<h2 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h2><p><strong>⌘＋H</strong> 隐藏窗口</p>
-<p><strong>⌘＋M</strong> 最小化窗口</p>
-<p><strong>⌘＋N</strong> 新建</p>
-<p><strong>⌘＋O</strong> 打开</p>
-<p><strong>⌘＋S</strong> 保存</p>
-<p><strong>⌘＋Shift＋S</strong> 另存为</p>
-<p><strong>⌘＋P</strong> 打印</p>
-<p><strong>⌘＋W</strong> 关闭</p>
-<p><strong>⌘＋Q</strong> 退出</p>
-<h2 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h2><p><strong>空格键</strong> 选中文件后按下<strong>空格键</strong>可以快速查看（<strong><em>如何快速查看markdown\csv\json等格式？</em></strong>）</p>
-<p><strong>⌘＋A</strong> 全选</p>
-<p><strong>⌘＋I</strong> 现实简介</p>
-<p><strong>⌘＋F</strong> 搜索</p>
-<p><strong>⌘＋C</strong> 复制</p>
-<p><strong>⌘＋V</strong> 粘贴</p>
-<p><strong>⌘＋delete</strong> 删除（⌘＋delete 还可以文字输入时删除光标前的整行）</p>
-<p><strong>⌘＋shift＋delete</strong> 清空回收站</p>
-<p><strong>⌘＋control＋N</strong>        新建文件夹，会将选中文件放入文件夹中</p>
-<h2 id="截屏"><a href="#截屏" class="headerlink" title="截屏"></a>截屏</h2><p><strong>⌘＋shift＋3</strong> 截取整个屏幕</p>
-<p><strong>⌘＋shift＋4</strong> 截取选择区域</p>
-<p><strong>⌘＋shift＋4＋空格</strong> 截取选择窗口</p>
-<h2 id="浏览器-safari"><a href="#浏览器-safari" class="headerlink" title="浏览器 safari"></a>浏览器 safari</h2><p><strong>⌘＋R</strong> 刷新</p>
-<p><strong>⌘＋T</strong> 新建一个选项卡</p>
-<p><strong>⌘＋Z</strong> 打开上一个关闭的选项卡</p>
-<p><strong>⌘＋➕</strong> 放大（当然也可以使用触摸板操作）</p>
-<p><strong>⌘＋➖</strong> 缩小（当然也可以通过触摸板操作）</p>
-<h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><p><strong>control ＋shift＋⎋</strong>  关闭显示器</p>
-<p><strong>⌘＋shift＋esc</strong> 强制退出程序</p>
-<p><strong>⌘＋option ＋⎋</strong> 睡眠</p>
-<p><strong>⌘＋option＋esc</strong> 打开任务管理器</p>
-<p><strong>⌘＋空格</strong> 呼出spolight search（To search for everything）</p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p><strong>option</strong></p>
-<ul>
-<li>当某个应用程序卡死的时候，可以在Dock栏右键选中应用，按下<code>option</code>，可以看到<strong>强制退出</strong></li>
-<li>按下<code>option</code>键，在菜单栏点选wifi图标时，可以看到当前连接网络的详细信息</li>
-</ul>
-<p><strong>option＋shift</strong>    微调，（在最小化窗口的时候，可以按下<code>option＋shift</code> 可以看到最小化的速度减慢了）</p>
-<blockquote>
-<ol>
-<li>另外Mac上快捷键那么多，都靠脑袋记住也不现实，Mac的用户也想到了这一点，推荐一个<a href="https://cheatsheetapp.com/CheatSheet/" target="_blank" rel="external"><strong>CheatSheet</strong></a>应用。</li>
-<li>使用Mac的人不得不去了解下<strong><a href="https://www.alfredapp.com" target="_blank" rel="external">Alfred</a></strong>，spotlight search 功能增强，结合其workflow功能，强大好用。</li>
-</ol>
-</blockquote>
-
           
+近期一直在熟悉Mac OS系统的使用，对于一个长期使用Windows的用户来说，各方面都需要适应，今天就总结下常用的快捷键，应该基本上可满足日常应用。
+
+切换⌘ ＋Tab 程序之间切换
+通用⌘＋H 隐藏窗口
+⌘＋M 最小化窗口
+⌘＋N 新建
+⌘＋O 打开
+⌘＋S 保存
+⌘＋Shift＋S 另存为
+
+          ...
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/09/03/Mac-OS-常用快捷键/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -906,14 +782,6 @@
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-08-31T21:11:13+08:00">
-                2016-08-31
-              </time>
-            
 
             
 
@@ -948,13 +816,19 @@
       
         
           
-            <h2 id="中英文切换"><a href="#中英文切换" class="headerlink" title="中英文切换"></a>中英文切换</h2><p>点亮<code>caps lock</code>可输入英文，需要输入大写英文再按下<code>shift</code>即可。</p>
-<h2 id="标点符号"><a href="#标点符号" class="headerlink" title="标点符号"></a>标点符号</h2><p><code>shift + option + B</code>  符号、数字甚至是单位可供选择</p>
-<p>shift+option+9 分隔符<code>·</code></p>
-<h2 id="字符表情"><a href="#字符表情" class="headerlink" title="字符表情"></a>字符表情</h2><p><code>shift ＋ 6</code></p>
-<h2 id="生僻字"><a href="#生僻字" class="headerlink" title="生僻字"></a>生僻字</h2><p>同时输入分拆的字音，按下<code>shift ＋ space</code><br>如：森，输入<code>mu mu mu</code>，按下<code>shift ＋ space</code></p>
-
-          
+          中英文切换点亮caps lock可输入英文，需要输入大写英文再按下shift即可。
+标点符号shift + option + B  符号、数字甚至是单位可供选择
+shift+option+9 分隔符·
+字符表情shift ＋ 6
+生僻字同时输入分拆的字音，按下shift ＋ space如：森，输入m
+          ...
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/08/31/Mac-OS-拼音输入法/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1026,14 +900,6 @@
 
         <div class="post-meta">
           <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-08-31T12:56:17+08:00">
-                2016-08-31
-              </time>
             
 
             
@@ -1173,6 +1039,35 @@
 
         <div class="links-of-author motion-element">
           
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/langping86" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/langping86" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.douban.com/people/59406322/" target="_blank" title="豆瓣">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  豆瓣
+                </a>
+              </span>
+            
+          
         </div>
 
         
@@ -1208,17 +1103,6 @@
   <span class="author" itemprop="copyrightHolder">shma</span>
 </div>
 
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
 
 
         
@@ -1274,21 +1158,28 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
 
 
 
   
-  
 
   
 
-  
 
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
