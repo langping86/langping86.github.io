@@ -4,9 +4,9 @@
   <subtitle>stay doing quietly.stay thinking frequently.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://langping86.github.io/"/>
   <updated>2016-09-25T05:15:28.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://langping86.github.io/</id>
   
   <author>
     <name>shma</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Docker入门学习</title>
-    <link href="http://yoursite.com/2016/09/25/Docker%20%E7%AE%80%E5%8D%95%E5%85%A5%E9%97%A8/"/>
-    <id>http://yoursite.com/2016/09/25/Docker 简单入门/</id>
+    <link href="https://langping86.github.io/2016/09/25/Docker%20%E7%AE%80%E5%8D%95%E5%85%A5%E9%97%A8/"/>
+    <id>https://langping86.github.io/2016/09/25/Docker 简单入门/</id>
     <published>2016-09-25T04:13:00.000Z</published>
     <updated>2016-09-25T05:15:28.000Z</updated>
     
@@ -42,14 +42,14 @@
     </summary>
     
     
-      <category term="Docker" scheme="http://yoursite.com/tags/Docker/"/>
+      <category term="Docker" scheme="https://langping86.github.io/tags/Docker/"/>
     
   </entry>
   
   <entry>
     <title>Java知识梳理</title>
-    <link href="http://yoursite.com/2016/09/05/Java%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/"/>
-    <id>http://yoursite.com/2016/09/05/Java知识梳理/</id>
+    <link href="https://langping86.github.io/2016/09/05/Java%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/"/>
+    <id>https://langping86.github.io/2016/09/05/Java知识梳理/</id>
     <published>2016-09-05T14:46:33.000Z</published>
     <updated>2016-09-08T06:23:25.000Z</updated>
     
@@ -94,14 +94,14 @@
     </summary>
     
     
-      <category term="编程技术整理" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
+      <category term="编程技术整理" scheme="https://langping86.github.io/tags/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title>Mac OS 常用快捷键</title>
-    <link href="http://yoursite.com/2016/09/03/Mac-OS-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    <id>http://yoursite.com/2016/09/03/Mac-OS-常用快捷键/</id>
+    <link href="https://langping86.github.io/2016/09/03/Mac-OS-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>https://langping86.github.io/2016/09/03/Mac-OS-常用快捷键/</id>
     <published>2016-09-03T03:50:38.000Z</published>
     <updated>2016-09-04T03:57:51.000Z</updated>
     
@@ -164,14 +164,14 @@
     </summary>
     
     
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+      <category term="Mac" scheme="https://langping86.github.io/tags/Mac/"/>
     
   </entry>
   
   <entry>
     <title>Mac OS 拼音输入法</title>
-    <link href="http://yoursite.com/2016/08/31/Mac-OS-%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%B3%95/"/>
-    <id>http://yoursite.com/2016/08/31/Mac-OS-拼音输入法/</id>
+    <link href="https://langping86.github.io/2016/08/31/Mac-OS-%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%B3%95/"/>
+    <id>https://langping86.github.io/2016/08/31/Mac-OS-拼音输入法/</id>
     <published>2016-08-31T13:11:13.000Z</published>
     <updated>2016-09-04T03:56:39.000Z</updated>
     
@@ -189,14 +189,14 @@
     </summary>
     
     
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+      <category term="Mac" scheme="https://langping86.github.io/tags/Mac/"/>
     
   </entry>
   
   <entry>
     <title>Hexo Quick Start</title>
-    <link href="http://yoursite.com/2016/08/31/hello-world/"/>
-    <id>http://yoursite.com/2016/08/31/hello-world/</id>
+    <link href="https://langping86.github.io/2016/08/31/hello-world/"/>
+    <id>https://langping86.github.io/2016/08/31/hello-world/</id>
     <published>2016-08-31T04:56:17.000Z</published>
     <updated>2016-09-04T03:40:16.000Z</updated>
     
