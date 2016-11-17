@@ -80,7 +80,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Mac," />
 
 
 
@@ -98,13 +98,19 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://langping86.github.io/about/index.html">
+<meta name="description" content="1.WHATAppleDNS collections the DNS data in China, and can solve the problem access App Store / Mac App Store / iTunes Store / Apple Music slow.
+2.HOW TO USE(1)Clone repository into your local path eve">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AppleDNS on Github">
+<meta property="og:url" content="https://langping86.github.io/2016/11/17/AppleDNS-on-Github/index.html">
 <meta property="og:site_name" content="｛am｝shuanbao">
-<meta property="og:updated_time" content="2016-08-31T11:45:13.000Z">
+<meta property="og:description" content="1.WHATAppleDNS collections the DNS data in China, and can solve the problem access App Store / Mac App Store / iTunes Store / Apple Music slow.
+2.HOW TO USE(1)Clone repository into your local path eve">
+<meta property="og:updated_time" content="2016-11-17T14:51:45.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
+<meta name="twitter:title" content="AppleDNS on Github">
+<meta name="twitter:description" content="1.WHATAppleDNS collections the DNS data in China, and can solve the problem access App Store / Mac App Store / iTunes Store / Apple Music slow.
+2.HOW TO USE(1)Clone repository into your local path eve">
 
 
 
@@ -132,19 +138,13 @@
 
 
 
-  <link rel="canonical" href="https://langping86.github.io/about/"/>
+  <link rel="canonical" href="https://langping86.github.io/2016/11/17/AppleDNS-on-Github/"/>
 
 
 
 
 
-  <title>
-  
-
-  
-    about | ｛am｝shuanbao
-  
-</title>
+  <title> AppleDNS on Github | ｛am｝shuanbao </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -165,7 +165,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right  ">
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -256,18 +256,175 @@
             
 
   <div id="posts" class="posts-expand">
-  <header class="post-header">
+    
 
-	<h2 class="post-title" itemprop="name headline">about</h2>
+  
 
+  
+  
+  
 
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="https://langping86.github.io/2016/11/17/AppleDNS-on-Github/">
 
-</header>
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="shma">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="｛am｝shuanbao">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="｛am｝shuanbao" src="">
+    </span>
+  </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                AppleDNS on Github
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-17T21:48:45+08:00">
+                2016-11-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
-    
+      
+
+      
+        <p><strong>1.WHAT</strong><br>AppleDNS collections the DNS data in China, and can solve the problem access App Store / Mac App Store / iTunes Store / Apple Music slow.</p>
+<p><strong>2.HOW TO USE</strong><br>(1)Clone repository into your local path everywhere you want.Mine is ~/dev/</p>
+<pre><code>git clone git@github.com:gongjianhui/AppleDNS.git
+</code></pre><p>(2) into the AppleDNS root path, execute python command and wait several minutes.</p>
+<pre><code>cd ~/dev/AppleDNS
+python fetch-timeout.py ChinaUnicom.json
+</code></pre><p>(3) Generate content.There are three choices: surge,hosts,merlin. Here is hosts.</p>
+<pre><code>python export-configure.py hosts
+</code></pre><p>(4) Copy the generated content into hosts file.</p>
+<pre><code># Build Date: 2016-11-17T02:38:34.420896 (UTC)
+# API-1-ChinaNetCenter [ChinaUnicom] (Avg RTT: 13.950ms)
+112.90.240.7    se.itunes.apple.com
+112.90.240.7    su.itunes.apple.com
+112.90.240.7    upp.itunes.apple.com
+112.90.240.7    play.itunes.apple.com
+112.90.240.7    client-api.itunes.apple.com
+# API-HK-Akamai-1 [HongKong0] (Avg RTT: 15.067ms)
+23.50.17.214    search.itunes.apple.com
+# API-HK-Akamai-2-AMRadio [HongKong1] (Avg RTT: 18.048ms)
+184.87.100.246  radio.itunes.apple.com
+184.87.100.246  radio-activity.itunes.apple.com
+184.87.100.246  radio-services.itunes.apple.com
+</code></pre><p>(5)you may be should clear DNS Cache.Notice: the command is different with you Mac OS versions. </p>
+<pre><code># 10.10.4 or later:
+sudo killall -HUP mDNSResponder
+# 10.10 ~ 10.10.3:
+sudo discoveryutil mdnsflushcache
+# 10.7 ~ 10.9.5:
+sudo killall -HUP mDNSResponder
+# 10.6 ~ 10.6.8:
+sudo dscacheutil -flushcache
+</code></pre>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Mac/" rel="tag"># Mac</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/15/What-s-in-iOS/" rel="next" title="What's in iOS?">
+                <i class="fa fa-chevron-left"></i> What's in iOS?
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -487,6 +644,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
