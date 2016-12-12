@@ -98,13 +98,19 @@
 
 
 
+<meta name="description" content="0.初次使用Git的感受第一次使用Git缘因Github，感觉Git也就是和SVN之类的版本控制软件类似，也是同样的修改、提交、更新、合并、解决冲突等，也同样需要一个服务器来管理不同人提交的内容。印象最深刻的是Git拥有一个强大的命令行，但是查询文件历史、文件变更等不如SVN在GUI客户端中那样直接，在技术的拐角处瞥到Git完全是因为Github、Linux。
+1.误会的产生与释疑我一直纳闷那么不">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Learn Git & GitHub">
 <meta property="og:url" content="https://langping86.github.io/2016/11/21/Learn-Git-GitHub/index.html">
 <meta property="og:site_name" content="｛am｝shuanbao">
-<meta property="og:updated_time" content="2016-11-21T02:49:25.000Z">
+<meta property="og:description" content="0.初次使用Git的感受第一次使用Git缘因Github，感觉Git也就是和SVN之类的版本控制软件类似，也是同样的修改、提交、更新、合并、解决冲突等，也同样需要一个服务器来管理不同人提交的内容。印象最深刻的是Git拥有一个强大的命令行，但是查询文件历史、文件变更等不如SVN在GUI客户端中那样直接，在技术的拐角处瞥到Git完全是因为Github、Linux。
+1.误会的产生与释疑我一直纳闷那么不">
+<meta property="og:updated_time" content="2016-11-28T16:21:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Learn Git & GitHub">
+<meta name="twitter:description" content="0.初次使用Git的感受第一次使用Git缘因Github，感觉Git也就是和SVN之类的版本控制软件类似，也是同样的修改、提交、更新、合并、解决冲突等，也同样需要一个服务器来管理不同人提交的内容。印象最深刻的是Git拥有一个强大的命令行，但是查询文件历史、文件变更等不如SVN在GUI客户端中那样直接，在技术的拐角处瞥到Git完全是因为Github、Linux。
+1.误会的产生与释疑我一直纳闷那么不">
 
 
 
@@ -332,7 +338,17 @@
       
 
       
-        
+        <h2 id="0-初次使用Git的感受"><a href="#0-初次使用Git的感受" class="headerlink" title="0.初次使用Git的感受"></a><strong>0.初次使用Git的感受</strong></h2><p>第一次使用Git缘因Github，感觉Git也就是和SVN之类的版本控制软件类似，也是同样的修改、提交、更新、合并、解决冲突等，也同样需要一个服务器来管理不同人提交的内容。印象最深刻的是Git拥有一个强大的命令行，但是查询文件历史、文件变更等不如SVN在GUI客户端中那样直接，在技术的拐角处瞥到Git完全是因为Github、Linux。</p>
+<h2 id="1-误会的产生与释疑"><a href="#1-误会的产生与释疑" class="headerlink" title="1.误会的产生与释疑"></a><strong>1.误会的产生与释疑</strong></h2><p>我一直纳闷那么不好用的一个工具，为什么在全世界的技术圈备受尊崇？直到真正使用Git后，才明白真正的差异是什么？<br>Git是一个分布式的版本控制系统，它根本不需要一个“中央服务器”，每个人的电脑上即是一个完整的版本库，所有的工作在没有网络的情况下也可以继续进行，待需要时再一次同步至服务器，大家可以通过服务器可以更方便的获取你共享的文件，当然没有服务器也可以共享文件，但在多人协作的情况下不太方便而已。</p>
+<h2 id="2-Create-a-repository"><a href="#2-Create-a-repository" class="headerlink" title="2.Create a repository"></a><strong>2.Create a repository</strong></h2><p>在使用Git前，先设置下自己的用户名和邮箱，用来作为你的身份标识，你的每一次提交都将使用这个信息。</p>
+<pre><code>$ git config --global user.name &quot;shma&quot;
+$ git config --global user.email &quot;msb17561@gmail.com&quot;
+</code></pre><p>接着，创建仓库。<br>可以Clone已有的版本库</p>
+<pre><code>$ git clone git@github.com:xxxxx/repo.git
+</code></pre><p>可以在当前目录下初始化一个本地库</p>
+<pre><code>$ git init
+</code></pre><p>现在，我们可以把新建的文集纳入版本管理了。<br>    $ touch README.MD<br>    $ git add README.MD<br>    $ git commit -m “add one file”<br>    [master b102e3a] add one file<br>     1 file changed, 0 insertions(+), 0 deletions(-)<br>     create mode 100644 README.MD<br>当执行完add、commit文件就被纳入版本管理了，下面说说文件的版本操作。<br><strong>总结</strong><br>通过上述简单的例子，实现了一个文件纳入版本管理的基本工作流。那么在这个过程中其实我们可以发现文件会随着不同的操作变化着状态，在Git中通常有3种状态：commited、modified、staged</p>
+
       
     </div>
 
@@ -373,6 +389,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/12/给儿子取名/" rel="prev" title="给儿子取名">
+                给儿子取名 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -419,8 +439,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -431,7 +460,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -441,7 +470,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -502,6 +531,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0-初次使用Git的感受"><span class="nav-number">1.</span> <span class="nav-text">0.初次使用Git的感受</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-误会的产生与释疑"><span class="nav-number">2.</span> <span class="nav-text">1.误会的产生与释疑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Create-a-repository"><span class="nav-number">3.</span> <span class="nav-text">2.Create a repository</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>

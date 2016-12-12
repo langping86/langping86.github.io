@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://langping86.github.io/"/>
-  <updated>2016-11-21T02:49:25.000Z</updated>
+  <updated>2016-12-12T05:04:46.000Z</updated>
   <id>https://langping86.github.io/</id>
   
   <author>
@@ -16,13 +16,56 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>给儿子取名</title>
+    <link href="https://langping86.github.io/2016/12/12/%E7%BB%99%E5%84%BF%E5%AD%90%E5%8F%96%E5%90%8D/"/>
+    <id>https://langping86.github.io/2016/12/12/给儿子取名/</id>
+    <published>2016-12-12T04:43:20.000Z</published>
+    <updated>2016-12-12T05:04:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>小马已经出生2个月零10天了，先取了小名<strong>兜兜</strong>，对麦兜的兜，意为兜住，不要丢三落四，更深一层的意思是希望男孩子能担当、能承担。</p>
+<p>但是，要领出生证明了，大名一直迟迟确定不了。期间想了几个，都被否决了，比如：马澍语，马蔚莀，含义都还不错，但都有生僻字。被否决的原因，一是担心以后上户口时公安系统打不出来这些生僻字，二是担心别人念不对（可不是开玩笑，我名字中的<strong>拴</strong> 字，音 shuan，刚看到我名字的人大多说都不会念）。</p>
+<p>今天12月12日，中国的双12购物节，按照中国的传统，这样的日子干什么都会扎堆的，比如：购物、结婚登记等。在今天终于确定了小马的大名，体会到“文章本天成，妙手偶得之”的乐趣。</p>
+<pre><code>马蔚东
+蔚：含义有盛大、有文采。
+东：日出东方，引申义为：活泼开朗、茁壮成长、奋发向上。
+</code></pre><p><strong>希望孩子茁壮成长、活泼开朗，能奋发向上，成为一个有知识的人。</strong><br><strong>感谢老婆，感谢宝宝，给生活带来了很多乐趣和新的方向。</strong></p>
+<p>💗于广州，2016年12月12日💗</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;小马已经出生2个月零10天了，先取了小名&lt;strong&gt;兜兜&lt;/strong&gt;，对麦兜的兜，意为兜住，不要丢三落四，更深一层的意思是希望男孩子能担当、能承担。&lt;/p&gt;
+&lt;p&gt;但是，要领出生证明了，大名一直迟迟确定不了。期间想了几个，都被否决了，比如：马澍语，马蔚莀，含义都还
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="https://langping86.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Learn Git &amp; GitHub</title>
     <link href="https://langping86.github.io/2016/11/21/Learn-Git-GitHub/"/>
     <id>https://langping86.github.io/2016/11/21/Learn-Git-GitHub/</id>
     <published>2016-11-21T02:48:44.000Z</published>
-    <updated>2016-11-21T02:49:25.000Z</updated>
+    <updated>2016-11-28T16:21:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="0-初次使用Git的感受"><a href="#0-初次使用Git的感受" class="headerlink" title="0.初次使用Git的感受"></a><strong>0.初次使用Git的感受</strong></h2><p>第一次使用Git缘因Github，感觉Git也就是和SVN之类的版本控制软件类似，也是同样的修改、提交、更新、合并、解决冲突等，也同样需要一个服务器来管理不同人提交的内容。印象最深刻的是Git拥有一个强大的命令行，但是查询文件历史、文件变更等不如SVN在GUI客户端中那样直接，在技术的拐角处瞥到Git完全是因为Github、Linux。</p>
+<h2 id="1-误会的产生与释疑"><a href="#1-误会的产生与释疑" class="headerlink" title="1.误会的产生与释疑"></a><strong>1.误会的产生与释疑</strong></h2><p>我一直纳闷那么不好用的一个工具，为什么在全世界的技术圈备受尊崇？直到真正使用Git后，才明白真正的差异是什么？<br>Git是一个分布式的版本控制系统，它根本不需要一个“中央服务器”，每个人的电脑上即是一个完整的版本库，所有的工作在没有网络的情况下也可以继续进行，待需要时再一次同步至服务器，大家可以通过服务器可以更方便的获取你共享的文件，当然没有服务器也可以共享文件，但在多人协作的情况下不太方便而已。</p>
+<h2 id="2-Create-a-repository"><a href="#2-Create-a-repository" class="headerlink" title="2.Create a repository"></a><strong>2.Create a repository</strong></h2><p>在使用Git前，先设置下自己的用户名和邮箱，用来作为你的身份标识，你的每一次提交都将使用这个信息。</p>
+<pre><code>$ git config --global user.name &quot;shma&quot;
+$ git config --global user.email &quot;msb17561@gmail.com&quot;
+</code></pre><p>接着，创建仓库。<br>可以Clone已有的版本库</p>
+<pre><code>$ git clone git@github.com:xxxxx/repo.git
+</code></pre><p>可以在当前目录下初始化一个本地库</p>
+<pre><code>$ git init
+</code></pre><p>现在，我们可以把新建的文集纳入版本管理了。<br>    $ touch README.MD<br>    $ git add README.MD<br>    $ git commit -m “add one file”<br>    [master b102e3a] add one file<br>     1 file changed, 0 insertions(+), 0 deletions(-)<br>     create mode 100644 README.MD<br>当执行完add、commit文件就被纳入版本管理了，下面说说文件的版本操作。<br><strong>总结</strong><br>通过上述简单的例子，实现了一个文件纳入版本管理的基本工作流。那么在这个过程中其实我们可以发现文件会随着不同的操作变化着状态，在Git中通常有3种状态：commited、modified、staged</p>
+]]></content>
     
     <summary type="html">
+    
+      &lt;h2 id=&quot;0-初次使用Git的感受&quot;&gt;&lt;a href=&quot;#0-初次使用Git的感受&quot; class=&quot;headerlink&quot; title=&quot;0.初次使用Git的感受&quot;&gt;&lt;/a&gt;&lt;strong&gt;0.初次使用Git的感受&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;第一次使用Git缘因Git
     
     </summary>
     
