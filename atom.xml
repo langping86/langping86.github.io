@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://langping86.github.io/"/>
-  <updated>2016-11-28T16:21:24.000Z</updated>
+  <updated>2016-12-21T14:44:19.000Z</updated>
   <id>https://langping86.github.io/</id>
   
   <author>
@@ -16,11 +16,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Sublime Text Quick Start</title>
+    <link href="https://langping86.github.io/2016/12/21/Sublime-Text-Quick-Start/"/>
+    <id>https://langping86.github.io/2016/12/21/Sublime-Text-Quick-Start/</id>
+    <published>2016-12-21T14:22:23.000Z</published>
+    <updated>2016-12-21T14:44:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>以下涉及到的快捷键均以Mac OS为例。</p>
+</blockquote>
+<h3 id="Lec1-批量操作"><a href="#Lec1-批量操作" class="headerlink" title="Lec1 批量操作"></a><strong>Lec1 批量操作</strong></h3><p>1.一次性替换 cmd+d<br>I once had a cat. The cat was fast.He was much faster than the average cat.</p>
+<p>2.行前、行后批量增加 <code>cmd+shift+L</code><br>(1)首先选中多行文本<br>(2)按下快捷键<br>(3)输入<code>&quot;</code><br>(4)将光标移动到行尾(可以使用<code>cmd+左右箭头</code>),输入<code>,</code><br>(5)将光标定位到行首，按下<code>delete</code></p>
+<pre><code>Mon  
+Tue  ==&gt;{&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed”}
+Wed
+</code></pre><p>3.快捷键组合，实现行、列互转<br>cmd+d<br>cmd+shift+L</p>
+<p>3.段落标记<br>\<p\>ctrl+shift+w\</p\></p>
+<h3 id="Lec2-行操作"><a href="#Lec2-行操作" class="headerlink" title="Lec2 行操作"></a><strong>Lec2 行操作</strong></h3><p>1.移动行<br>cmd+ctrl+arrow<br>2.新增行<br>cmd+shift+d<br>3.删除行<br>ctrl+shift+k<br>4.对齐 indent </p>
+<h3 id="Lec3-搜索"><a href="#Lec3-搜索" class="headerlink" title="Lec3 搜索"></a><strong>Lec3 搜索</strong></h3><p>1.cmd+p 打开搜索栏<br>2.@、#、:<br><code>@</code> 跳转到指定的标记处<br><code>#</code> 在文件中查找<br><code>:</code>跳转到指定行<br>注意：符号前后都可以加内容，符号前的内容表示对文件进行搜索，符号后的内容同上</p>
+<h3 id="Lec4-Command-Palette"><a href="#Lec4-Command-Palette" class="headerlink" title="Lec4 Command Palette"></a><strong>Lec4 Command Palette</strong></h3><p><code>cmd+shift+p</code><br>1.命令面板拥有一些不常用的功能，比如排序、更改语法、修改缩进。<br>不需要通过菜单栏或难记的快捷键来找到你需要的内容。<br>2.用来安装包和插件<br>使用快捷键打开命令面板后，输入 install package，等片刻，后在弹出的输入框输入需要安装的插件名称即可。</p>
+<h3 id="Lec5-Package-Manager"><a href="#Lec5-Package-Manager" class="headerlink" title="Lec5 Package Manager"></a><strong>Lec5 Package Manager</strong></h3><p><a href="https://packagecontrol.io" title="Package Control" target="_blank" rel="external">Package Control</a></p>
+<h3 id="Lec6-Text-Snippets"><a href="#Lec6-Text-Snippets" class="headerlink" title="Lec6 Text Snippets"></a><strong>Lec6 Text Snippets</strong></h3><p>可以快入插入文本片段，能用到的时候在详细看吧，具体内容就不列出来了。</p>
+<h3 id="Lec7-Text-Emmet"><a href="#Lec7-Text-Emmet" class="headerlink" title="Lec7 Text Emmet"></a><strong>Lec7 Text Emmet</strong></h3><p>Emmet插件可以大大提高前段开发的效率，具体使用方法使用到在搜索了。</p>
+<h3 id="Lec8-Split-Layout"><a href="#Lec8-Split-Layout" class="headerlink" title="Lec8 Split Layout"></a><strong>Lec8 Split Layout</strong></h3><p>1.View-Layout选择多列模式<br>2.在两个Column中编辑同一个文件<br>先通过File–new view into file，将新建的文件视图拖放到另一个Column中即可</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;以下涉及到的快捷键均以Mac OS为例。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Lec1-批量操作&quot;&gt;&lt;a href=&quot;#Lec1-批量操作&quot; class=&quot;headerlink&quot; title=&quot;Lec1 批量操作&quot;&gt;&lt;/a&gt;&lt;str
+    
+    </summary>
+    
+    
+      <category term="PD Tools" scheme="https://langping86.github.io/tags/PD-Tools/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Learn Git &amp; GitHub</title>
     <link href="https://langping86.github.io/2016/11/21/Learn-Git-GitHub/"/>
     <id>https://langping86.github.io/2016/11/21/Learn-Git-GitHub/</id>
     <published>2016-11-21T02:48:44.000Z</published>
-    <updated>2016-11-28T16:21:24.000Z</updated>
+    <updated>2016-12-21T14:24:13.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="0-初次使用Git的感受"><a href="#0-初次使用Git的感受" class="headerlink" title="0.初次使用Git的感受"></a><strong>0.初次使用Git的感受</strong></h2><p>第一次使用Git缘因Github，感觉Git也就是和SVN之类的版本控制软件类似，也是同样的修改、提交、更新、合并、解决冲突等，也同样需要一个服务器来管理不同人提交的内容。印象最深刻的是Git拥有一个强大的命令行，但是查询文件历史、文件变更等不如SVN在GUI客户端中那样直接，在技术的拐角处瞥到Git完全是因为Github、Linux。</p>
 <h2 id="1-误会的产生与释疑"><a href="#1-误会的产生与释疑" class="headerlink" title="1.误会的产生与释疑"></a><strong>1.误会的产生与释疑</strong></h2><p>我一直纳闷那么不好用的一个工具，为什么在全世界的技术圈备受尊崇？直到真正使用Git后，才明白真正的差异是什么？<br>Git是一个分布式的版本控制系统，它根本不需要一个“中央服务器”，每个人的电脑上即是一个完整的版本库，所有的工作在没有网络的情况下也可以继续进行，待需要时再一次同步至服务器，大家可以通过服务器可以更方便的获取你共享的文件，当然没有服务器也可以共享文件，但在多人协作的情况下不太方便而已。</p>
@@ -41,7 +81,7 @@ $ git config --global user.email &quot;msb17561@gmail.com&quot;
     </summary>
     
     
-      <category term="Git" scheme="https://langping86.github.io/tags/Git/"/>
+      <category term="PD Tools" scheme="https://langping86.github.io/tags/PD-Tools/"/>
     
   </entry>
   
