@@ -359,7 +359,17 @@ laravel new myapp
 <pre><code>cd / &amp;&amp; ./serve.sh myapp.dev /apps/myapp/public
 </code></pre><p>In the host(<strong>Local</strong>), update /etc/hosts to include your app domain:</p>
 <pre><code>127.0.0.1               myapp.dev
-</code></pre>
+</code></pre><h2 id="QA"><a href="#QA" class="headerlink" title="QA"></a><strong>QA</strong></h2><ol>
+<li>Maybe you will get Permission denied when you are adding a virtual host<blockquote>
+<p>switch user to <strong>su</strong> with default password <strong>secret</strong>in terminal like these:<br>sudo su</p>
+</blockquote>
+</li>
+<li>how to restart <strong>nginx</strong> in terminal (To use SU user)<blockquote>
+<p>nginix -s reload</p>
+</blockquote>
+</li>
+</ol>
+
           
         
       
@@ -1799,7 +1809,7 @@ sudo dscacheutil -flushcache
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

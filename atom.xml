@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://langping86.github.io/"/>
-  <updated>2017-03-05T05:32:31.000Z</updated>
+  <updated>2017-09-11T14:31:33.000Z</updated>
   <id>https://langping86.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://langping86.github.io/2017/03/05/Create-Homestead-Env-in-Docker/"/>
     <id>https://langping86.github.io/2017/03/05/Create-Homestead-Env-in-Docker/</id>
     <published>2017-03-05T05:04:09.000Z</published>
-    <updated>2017-03-05T05:32:31.000Z</updated>
+    <updated>2017-09-11T14:31:33.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Create-Homestead-Env-in-Docker"><a href="#Create-Homestead-Env-in-Docker" class="headerlink" title="Create Homestead Env in Docker"></a><strong>Create Homestead Env in Docker</strong></h1><p>The main content is from:<a href="https://store.docker.com/community/images/shincoder/homestead" target="_blank" rel="external">https://store.docker.com/community/images/shincoder/homestead</a></p>
 <h2 id="1-Pull-homestead-image"><a href="#1-Pull-homestead-image" class="headerlink" title="1.Pull homestead image"></a><strong>1.Pull homestead image</strong></h2><pre><code>docker pull shincoder/homestead:php7.0
@@ -43,7 +43,17 @@ laravel new myapp
 <pre><code>cd / &amp;&amp; ./serve.sh myapp.dev /apps/myapp/public
 </code></pre><p>In the host(<strong>Local</strong>), update /etc/hosts to include your app domain:</p>
 <pre><code>127.0.0.1               myapp.dev
-</code></pre>]]></content>
+</code></pre><h2 id="QA"><a href="#QA" class="headerlink" title="QA"></a><strong>QA</strong></h2><ol>
+<li>Maybe you will get Permission denied when you are adding a virtual host<blockquote>
+<p>switch user to <strong>su</strong> with default password <strong>secret</strong>in terminal like these:<br>sudo su</p>
+</blockquote>
+</li>
+<li>how to restart <strong>nginx</strong> in terminal (To use SU user)<blockquote>
+<p>nginix -s reload</p>
+</blockquote>
+</li>
+</ol>
+]]></content>
     
     <summary type="html">
     
