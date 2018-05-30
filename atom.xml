@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>｛am｝shuanbao</title>
+  
   <subtitle>Do quietly.Think frequently.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://langping86.github.io/"/>
-  <updated>2017-09-11T14:31:33.000Z</updated>
+  <updated>2018-05-30T15:03:13.716Z</updated>
   <id>https://langping86.github.io/</id>
   
   <author>
@@ -20,44 +21,16 @@
     <link href="https://langping86.github.io/2017/03/05/Create-Homestead-Env-in-Docker/"/>
     <id>https://langping86.github.io/2017/03/05/Create-Homestead-Env-in-Docker/</id>
     <published>2017-03-05T05:04:09.000Z</published>
-    <updated>2017-09-11T14:31:33.000Z</updated>
+    <updated>2018-05-30T15:03:13.716Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Create-Homestead-Env-in-Docker"><a href="#Create-Homestead-Env-in-Docker" class="headerlink" title="Create Homestead Env in Docker"></a><strong>Create Homestead Env in Docker</strong></h1><p>The main content is from:<a href="https://store.docker.com/community/images/shincoder/homestead" target="_blank" rel="external">https://store.docker.com/community/images/shincoder/homestead</a></p>
-<h2 id="1-Pull-homestead-image"><a href="#1-Pull-homestead-image" class="headerlink" title="1.Pull homestead image"></a><strong>1.Pull homestead image</strong></h2><pre><code>docker pull shincoder/homestead:php7.0
-</code></pre><h2 id="2-Clone-amp-amp-Edit-docker-compose-yml"><a href="#2-Clone-amp-amp-Edit-docker-compose-yml" class="headerlink" title="2.Clone &amp;&amp; Edit docker-compose.yml"></a><strong>2.Clone &amp;&amp; Edit docker-compose.yml</strong></h2><pre><code>git clone https://github.com/shincoder/homestead-docker.git
-</code></pre><p>rename docker-compose.dist.yml to docker-compose.yml then edit the file with you own paths and ports.</p>
-<h2 id="3-Start-your-containers"><a href="#3-Start-your-containers" class="headerlink" title="3.Start your containers"></a><strong>3.Start your containers</strong></h2><p>There are only two containers to run. web container ( includes everything except your database ), and mariadb container.</p>
-<pre><code>sudo docker-compose up -d
-</code></pre><h2 id="4-SSH-into-the-container-password-secret"><a href="#4-SSH-into-the-container-password-secret" class="headerlink" title="4.SSH into the container (password: secret):"></a><strong>4.SSH into the container (password: secret):</strong></h2><pre><code>ssh -p 2222 homestead@localhost
-</code></pre><h2 id="5-Create-Laravel-application"><a href="#5-Create-Laravel-application" class="headerlink" title="5.Create Laravel application"></a><strong>5.Create Laravel application</strong></h2><pre><code> # update composer
-composer selfupdate
-# config mirror in China
-composer config -g repo.packagist composer https://packagist.phpcomposer.com 
-# install laravel installer
-composer global require &quot;laravel/installer&quot;
-# install laravel &amp;&amp; create an app
-cd /apps
-laravel new myapp
-</code></pre><p>The mirror:<a href="https://pkg.phpcomposer.com" target="_blank" rel="external">https://pkg.phpcomposer.com</a></p>
-<h2 id="6-Add-a-virtual-host-Running-more-apps-in-one-Homestead"><a href="#6-Add-a-virtual-host-Running-more-apps-in-one-Homestead" class="headerlink" title="6.Add a virtual host(Running more apps in one Homestead)"></a><strong>6.Add a virtual host(Running more apps in one Homestead)</strong></h2><p>Assuming you mapped your apps folder to /apps (you can change mappings in the docker-compose.yml file, it’s prefered to use absolute paths), you can do:</p>
-<pre><code>cd / &amp;&amp; ./serve.sh myapp.dev /apps/myapp/public
-</code></pre><p>In the host(<strong>Local</strong>), update /etc/hosts to include your app domain:</p>
-<pre><code>127.0.0.1               myapp.dev
-</code></pre><h2 id="QA"><a href="#QA" class="headerlink" title="QA"></a><strong>QA</strong></h2><ol>
-<li>Maybe you will get Permission denied when you are adding a virtual host<blockquote>
-<p>switch user to <strong>su</strong> with default password <strong>secret</strong>in terminal like these:<br>sudo su</p>
-</blockquote>
-</li>
-<li>how to restart <strong>nginx</strong> in terminal (To use SU user)<blockquote>
-<p>nginix -s reload</p>
-</blockquote>
-</li>
-</ol>
-]]></content>
+    <content type="html"><![CDATA[<h1 id="Create-Homestead-Env-in-Docker"><a href="#Create-Homestead-Env-in-Docker" class="headerlink" title="Create Homestead Env in Docker"></a><strong>Create Homestead Env in Docker</strong></h1><p>The main content is from:<a href="https://store.docker.com/community/images/shincoder/homestead" target="_blank" rel="noopener">https://store.docker.com/community/images/shincoder/homestead</a></p><h2 id="1-Pull-homestead-image"><a href="#1-Pull-homestead-image" class="headerlink" title="1.Pull homestead image"></a><strong>1.Pull homestead image</strong></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker pull shincoder/homestead:php7.0</span><br></pre></td></tr></table></figure><h2 id="2-Clone-amp-amp-Edit-docker-compose-yml"><a href="#2-Clone-amp-amp-Edit-docker-compose-yml" class="headerlink" title="2.Clone &amp;&amp; Edit docker-compose.yml"></a><strong>2.Clone &amp;&amp; Edit docker-compose.yml</strong></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/shincoder/homestead-docker.git</span><br></pre></td></tr></table></figure><p>rename docker-compose.dist.yml to docker-compose.yml then edit the file with your own paths and ports.</p><h2 id="3-Start-your-containers"><a href="#3-Start-your-containers" class="headerlink" title="3.Start your containers"></a><strong>3.Start your containers</strong></h2><p>There are only two containers to run. web container ( includes everything except your database ), and mariadb container.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo docker-compose up <span class="_">-d</span></span><br></pre></td></tr></table></figure><h2 id="4-SSH-into-the-container-password-secret"><a href="#4-SSH-into-the-container-password-secret" class="headerlink" title="4.SSH into the container (password: secret):"></a><strong>4.SSH into the container (password: secret):</strong></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -p 2222 homestead@localhost</span><br></pre></td></tr></table></figure><h2 id="5-Create-Laravel-application"><a href="#5-Create-Laravel-application" class="headerlink" title="5.Create Laravel application"></a><strong>5.Create Laravel application</strong></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment"># update composer</span></span><br><span class="line">composer selfupdate</span><br><span class="line"><span class="comment"># config mirror in China</span></span><br><span class="line">composer config -g repo.packagist composer https://packagist.phpcomposer.com </span><br><span class="line"><span class="comment"># install laravel installer</span></span><br><span class="line">composer global require <span class="string">"laravel/installer"</span></span><br><span class="line"><span class="comment"># install laravel &amp;&amp; create an app</span></span><br><span class="line"><span class="built_in">cd</span> /apps</span><br><span class="line">laravel new myapp</span><br></pre></td></tr></table></figure><p>The mirror:<a href="https://pkg.phpcomposer.com" target="_blank" rel="noopener">https://pkg.phpcomposer.com</a></p><h2 id="6-Add-a-virtual-host-Running-more-apps-in-one-Homestead"><a href="#6-Add-a-virtual-host-Running-more-apps-in-one-Homestead" class="headerlink" title="6.Add a virtual host(Running more apps in one Homestead)"></a><strong>6.Add a virtual host(Running more apps in one Homestead)</strong></h2><p>Assuming you mapped your apps folder to /apps (you can change mappings in the docker-compose.yml file, it’s prefered to use absolute paths), you can do:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> / &amp;&amp; ./serve.sh myapp.dev /apps/myapp/public</span><br></pre></td></tr></table></figure><p>In the host(<strong>Local</strong>), update /etc/hosts to include your app domain:</p><pre><code>127.0.0.1               myapp.dev</code></pre><h2 id="QA"><a href="#QA" class="headerlink" title="QA"></a><strong>QA</strong></h2><ol><li>Maybe you will get Permission denied when you are adding a virtual host<blockquote><p>switch user to <strong>su</strong> with default password <strong>secret</strong>in terminal like these:<br>sudo su</p></blockquote></li><li>how to restart <strong>nginx</strong> in terminal (To use SU user)<blockquote><p>nginix -s reload</p></blockquote></li></ol>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Create-Homestead-Env-in-Docker&quot;&gt;&lt;a href=&quot;#Create-Homestead-Env-in-Docker&quot; class=&quot;headerlink&quot; title=&quot;Create Homestead Env in Docker&quot;&gt;
+      
+      
+        &lt;h1 id=&quot;Create-Homestead-Env-in-Docker&quot;&gt;&lt;a href=&quot;#Create-Homestead-Env-in-Docker&quot; class=&quot;headerlink&quot; title=&quot;Create Homestead Env in Docker&quot;&gt;
+      
     
     </summary>
     
@@ -73,31 +46,17 @@ laravel new myapp
     <published>2016-12-21T14:22:23.000Z</published>
     <updated>2016-12-21T14:44:19.000Z</updated>
     
-    <content type="html"><![CDATA[<blockquote>
-<p>以下涉及到的快捷键均以Mac OS为例。</p>
-</blockquote>
-<h3 id="Lec1-批量操作"><a href="#Lec1-批量操作" class="headerlink" title="Lec1 批量操作"></a><strong>Lec1 批量操作</strong></h3><p>1.一次性替换 cmd+d<br>I once had a cat. The cat was fast.He was much faster than the average cat.</p>
-<p>2.行前、行后批量增加 <code>cmd+shift+L</code><br>(1)首先选中多行文本<br>(2)按下快捷键<br>(3)输入<code>&quot;</code><br>(4)将光标移动到行尾(可以使用<code>cmd+左右箭头</code>),输入<code>,</code><br>(5)将光标定位到行首，按下<code>delete</code></p>
-<pre><code>Mon  
-Tue  ==&gt;{&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed”}
-Wed
-</code></pre><p>3.快捷键组合，实现行、列互转<br>cmd+d<br>cmd+shift+L</p>
-<p>3.段落标记<br>\<p\>ctrl+shift+w\</p\></p>
-<h3 id="Lec2-行操作"><a href="#Lec2-行操作" class="headerlink" title="Lec2 行操作"></a><strong>Lec2 行操作</strong></h3><p>1.移动行<br>cmd+ctrl+arrow<br>2.新增行<br>cmd+shift+d<br>3.删除行<br>ctrl+shift+k<br>4.对齐 indent </p>
-<h3 id="Lec3-搜索"><a href="#Lec3-搜索" class="headerlink" title="Lec3 搜索"></a><strong>Lec3 搜索</strong></h3><p>1.cmd+p 打开搜索栏<br>2.@、#、:<br><code>@</code> 跳转到指定的标记处<br><code>#</code> 在文件中查找<br><code>:</code>跳转到指定行<br>注意：符号前后都可以加内容，符号前的内容表示对文件进行搜索，符号后的内容同上</p>
-<h3 id="Lec4-Command-Palette"><a href="#Lec4-Command-Palette" class="headerlink" title="Lec4 Command Palette"></a><strong>Lec4 Command Palette</strong></h3><p><code>cmd+shift+p</code><br>1.命令面板拥有一些不常用的功能，比如排序、更改语法、修改缩进。<br>不需要通过菜单栏或难记的快捷键来找到你需要的内容。<br>2.用来安装包和插件<br>使用快捷键打开命令面板后，输入 install package，等片刻，后在弹出的输入框输入需要安装的插件名称即可。</p>
-<h3 id="Lec5-Package-Manager"><a href="#Lec5-Package-Manager" class="headerlink" title="Lec5 Package Manager"></a><strong>Lec5 Package Manager</strong></h3><p><a href="https://packagecontrol.io" title="Package Control" target="_blank" rel="external">Package Control</a></p>
-<h3 id="Lec6-Text-Snippets"><a href="#Lec6-Text-Snippets" class="headerlink" title="Lec6 Text Snippets"></a><strong>Lec6 Text Snippets</strong></h3><p>可以快入插入文本片段，能用到的时候在详细看吧，具体内容就不列出来了。</p>
-<h3 id="Lec7-Text-Emmet"><a href="#Lec7-Text-Emmet" class="headerlink" title="Lec7 Text Emmet"></a><strong>Lec7 Text Emmet</strong></h3><p>Emmet插件可以大大提高前段开发的效率，具体使用方法使用到在搜索了。</p>
-<h3 id="Lec8-Split-Layout"><a href="#Lec8-Split-Layout" class="headerlink" title="Lec8 Split Layout"></a><strong>Lec8 Split Layout</strong></h3><p>1.View-Layout选择多列模式<br>2.在两个Column中编辑同一个文件<br>先通过File–new view into file，将新建的文件视图拖放到另一个Column中即可</p>
-]]></content>
+    <content type="html"><![CDATA[<blockquote><p>以下涉及到的快捷键均以Mac OS为例。</p></blockquote><h3 id="Lec1-批量操作"><a href="#Lec1-批量操作" class="headerlink" title="Lec1 批量操作"></a><strong>Lec1 批量操作</strong></h3><p>1.一次性替换 cmd+d<br>I once had a cat. The cat was fast.He was much faster than the average cat.</p><p>2.行前、行后批量增加 <code>cmd+shift+L</code><br>(1)首先选中多行文本<br>(2)按下快捷键<br>(3)输入<code>&quot;</code><br>(4)将光标移动到行尾(可以使用<code>cmd+左右箭头</code>),输入<code>,</code><br>(5)将光标定位到行首，按下<code>delete</code></p><pre><code>Mon  Tue  ==&gt;{&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed”}Wed</code></pre><p>3.快捷键组合，实现行、列互转<br>cmd+d<br>cmd+shift+L</p><p>3.段落标记<br>\&lt;p>ctrl+shift+w\&lt;/p></p><h3 id="Lec2-行操作"><a href="#Lec2-行操作" class="headerlink" title="Lec2 行操作"></a><strong>Lec2 行操作</strong></h3><p>1.移动行<br>cmd+ctrl+arrow<br>2.新增行<br>cmd+shift+d<br>3.删除行<br>ctrl+shift+k<br>4.对齐 indent </p><h3 id="Lec3-搜索"><a href="#Lec3-搜索" class="headerlink" title="Lec3 搜索"></a><strong>Lec3 搜索</strong></h3><p>1.cmd+p 打开搜索栏<br>2.@、#、:<br><code>@</code> 跳转到指定的标记处<br><code>#</code> 在文件中查找<br><code>:</code>跳转到指定行<br>注意：符号前后都可以加内容，符号前的内容表示对文件进行搜索，符号后的内容同上</p><h3 id="Lec4-Command-Palette"><a href="#Lec4-Command-Palette" class="headerlink" title="Lec4 Command Palette"></a><strong>Lec4 Command Palette</strong></h3><p><code>cmd+shift+p</code><br>1.命令面板拥有一些不常用的功能，比如排序、更改语法、修改缩进。<br>不需要通过菜单栏或难记的快捷键来找到你需要的内容。<br>2.用来安装包和插件<br>使用快捷键打开命令面板后，输入 install package，等片刻，后在弹出的输入框输入需要安装的插件名称即可。</p><h3 id="Lec5-Package-Manager"><a href="#Lec5-Package-Manager" class="headerlink" title="Lec5 Package Manager"></a><strong>Lec5 Package Manager</strong></h3><p><a href="https://packagecontrol.io" title="Package Control" target="_blank" rel="noopener">Package Control</a></p><h3 id="Lec6-Text-Snippets"><a href="#Lec6-Text-Snippets" class="headerlink" title="Lec6 Text Snippets"></a><strong>Lec6 Text Snippets</strong></h3><p>可以快入插入文本片段，能用到的时候在详细看吧，具体内容就不列出来了。</p><h3 id="Lec7-Text-Emmet"><a href="#Lec7-Text-Emmet" class="headerlink" title="Lec7 Text Emmet"></a><strong>Lec7 Text Emmet</strong></h3><p>Emmet插件可以大大提高前段开发的效率，具体使用方法使用到在搜索了。</p><h3 id="Lec8-Split-Layout"><a href="#Lec8-Split-Layout" class="headerlink" title="Lec8 Split Layout"></a><strong>Lec8 Split Layout</strong></h3><p>1.View-Layout选择多列模式<br>2.在两个Column中编辑同一个文件<br>先通过File–new view into file，将新建的文件视图拖放到另一个Column中即可</p>]]></content>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
+      
+      
+        &lt;blockquote&gt;
 &lt;p&gt;以下涉及到的快捷键均以Mac OS为例。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;Lec1-批量操作&quot;&gt;&lt;a href=&quot;#Lec1-批量操作&quot; class=&quot;headerlink&quot; title=&quot;Lec1 批量操作&quot;&gt;&lt;/a&gt;&lt;str
+      
     
     </summary>
     
@@ -111,23 +70,16 @@ Wed
     <link href="https://langping86.github.io/2016/11/21/Learn-Git-GitHub/"/>
     <id>https://langping86.github.io/2016/11/21/Learn-Git-GitHub/</id>
     <published>2016-11-21T02:48:44.000Z</published>
-    <updated>2016-12-21T14:24:13.000Z</updated>
+    <updated>2018-05-30T14:50:05.753Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="0-初次使用Git的感受"><a href="#0-初次使用Git的感受" class="headerlink" title="0.初次使用Git的感受"></a><strong>0.初次使用Git的感受</strong></h2><p>第一次使用Git缘因Github，感觉Git也就是和SVN之类的版本控制软件类似，也是同样的修改、提交、更新、合并、解决冲突等，也同样需要一个服务器来管理不同人提交的内容。印象最深刻的是Git拥有一个强大的命令行，但是查询文件历史、文件变更等不如SVN在GUI客户端中那样直接，在技术的拐角处瞥到Git完全是因为Github、Linux。</p>
-<h2 id="1-误会的产生与释疑"><a href="#1-误会的产生与释疑" class="headerlink" title="1.误会的产生与释疑"></a><strong>1.误会的产生与释疑</strong></h2><p>我一直纳闷那么不好用的一个工具，为什么在全世界的技术圈备受尊崇？直到真正使用Git后，才明白真正的差异是什么？<br>Git是一个分布式的版本控制系统，它根本不需要一个“中央服务器”，每个人的电脑上即是一个完整的版本库，所有的工作在没有网络的情况下也可以继续进行，待需要时再一次同步至服务器，大家可以通过服务器可以更方便的获取你共享的文件，当然没有服务器也可以共享文件，但在多人协作的情况下不太方便而已。</p>
-<h2 id="2-Create-a-repository"><a href="#2-Create-a-repository" class="headerlink" title="2.Create a repository"></a><strong>2.Create a repository</strong></h2><p>在使用Git前，先设置下自己的用户名和邮箱，用来作为你的身份标识，你的每一次提交都将使用这个信息。</p>
-<pre><code>$ git config --global user.name &quot;shma&quot;
-$ git config --global user.email &quot;msb17561@gmail.com&quot;
-</code></pre><p>接着，创建仓库。<br>可以Clone已有的版本库</p>
-<pre><code>$ git clone git@github.com:xxxxx/repo.git
-</code></pre><p>可以在当前目录下初始化一个本地库</p>
-<pre><code>$ git init
-</code></pre><p>现在，我们可以把新建的文集纳入版本管理了。<br>    $ touch README.MD<br>    $ git add README.MD<br>    $ git commit -m “add one file”<br>    [master b102e3a] add one file<br>     1 file changed, 0 insertions(+), 0 deletions(-)<br>     create mode 100644 README.MD<br>当执行完add、commit文件就被纳入版本管理了，下面说说文件的版本操作。<br><strong>总结</strong><br>通过上述简单的例子，实现了一个文件纳入版本管理的基本工作流。那么在这个过程中其实我们可以发现文件会随着不同的操作变化着状态，在Git中通常有3种状态：commited、modified、staged</p>
-]]></content>
+    <content type="html"><![CDATA[<h2 id="0-初次使用Git的感受"><a href="#0-初次使用Git的感受" class="headerlink" title="0.初次使用Git的感受"></a><strong>0.初次使用Git的感受</strong></h2><p>第一次使用Git缘因Github，感觉Git也就是和SVN之类的版本控制软件类似，也是同样的修改、提交、更新、合并、解决冲突等，也同样需要一个服务器来管理不同人提交的内容。印象最深刻的是Git拥有一个强大的命令行，但是查询文件历史、文件变更等不如SVN在GUI客户端中那样直接，在技术的拐角处瞥到Git完全是因为Github、Linux。</p><h2 id="1-误会的产生与释疑"><a href="#1-误会的产生与释疑" class="headerlink" title="1.误会的产生与释疑"></a><strong>1.误会的产生与释疑</strong></h2><p>我一直纳闷那么不好用的一个工具，为什么在全世界的技术圈备受尊崇？直到真正使用Git后，才明白真正的差异是什么？<br>Git是一个分布式的版本控制系统，它根本不需要一个“中央服务器”，每个人的电脑上即是一个完整的版本库，所有的工作在没有网络的情况下也可以继续进行，待需要时再一次同步至服务器，大家可以通过服务器可以更方便的获取你共享的文件，当然没有服务器也可以共享文件，但在多人协作的情况下不太方便而已。</p><h2 id="2-Create-a-repository"><a href="#2-Create-a-repository" class="headerlink" title="2.Create a repository"></a><strong>2.Create a repository</strong></h2><p>在使用Git前，先设置下自己的用户名和邮箱，用来作为你的身份标识，你的每一次提交都将使用这个信息。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"shma"</span></span><br><span class="line">$ git config --global user.email <span class="string">"msb17561@gmail.com"</span></span><br></pre></td></tr></table></figure><p>接着，创建仓库。<br>可以Clone已有的版本库</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> git@github.com:xxxxx/repo.git</span><br></pre></td></tr></table></figure><p>可以在当前目录下初始化一个本地库</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure><p>现在，我们可以把新建的文集纳入版本管理了。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ touch README.MD</span><br><span class="line">$ git add README.MD</span><br><span class="line">$ git commit -m <span class="string">"add one file"</span></span><br><span class="line">[master b102e3a] add one file</span><br><span class="line"> 1 file changed, 0 insertions(+), 0 deletions(-)</span><br><span class="line"> create mode 100644 README.MD</span><br></pre></td></tr></table></figure><p>当执行完add、commit文件就被纳入版本管理了，下面说说文件的版本操作。<br><strong>总结</strong><br>通过上述简单的例子，实现了一个文件纳入版本管理的基本工作流。那么在这个过程中其实我们可以发现文件会随着不同的操作变化着状态，在Git中通常有3种状态：commited、modified、staged</p>]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;0-初次使用Git的感受&quot;&gt;&lt;a href=&quot;#0-初次使用Git的感受&quot; class=&quot;headerlink&quot; title=&quot;0.初次使用Git的感受&quot;&gt;&lt;/a&gt;&lt;strong&gt;0.初次使用Git的感受&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;第一次使用Git缘因Git
+      
+      
+        &lt;h2 id=&quot;0-初次使用Git的感受&quot;&gt;&lt;a href=&quot;#0-初次使用Git的感受&quot; class=&quot;headerlink&quot; title=&quot;0.初次使用Git的感受&quot;&gt;&lt;/a&gt;&lt;strong&gt;0.初次使用Git的感受&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;第一次使用Git缘因Git
+      
     
     </summary>
     
@@ -141,44 +93,16 @@ $ git config --global user.email &quot;msb17561@gmail.com&quot;
     <link href="https://langping86.github.io/2016/11/17/AppleDNS-on-Github/"/>
     <id>https://langping86.github.io/2016/11/17/AppleDNS-on-Github/</id>
     <published>2016-11-17T13:48:45.000Z</published>
-    <updated>2016-11-18T05:26:57.000Z</updated>
+    <updated>2018-05-30T14:42:16.005Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>1.WHAT</strong><br>AppleDNS collections the DNS data in China, and it’s can be used to solve the problem access App Store / Mac App Store / iTunes Store / Apple Music slow.</p>
-<p><strong>2.HOW TO USE</strong><br>(1)Clone repository into your local path everywhere you want.Mine is ~/dev/</p>
-<pre><code>git clone git@github.com:gongjianhui/AppleDNS.git
-</code></pre><p>(2) into the AppleDNS root path, execute python command and wait several minutes.</p>
-<pre><code>cd ~/dev/AppleDNS
-python fetch-timeout.py ChinaUnicom.json
-</code></pre><p>(3) Generate content.There are three choices: surge,hosts,merlin. Here is hosts.</p>
-<pre><code>python export-configure.py hosts
-</code></pre><p>(4) Copy the generated content into hosts file.</p>
-<pre><code># Build Date: 2016-11-17T02:38:34.420896 (UTC)
-# API-1-ChinaNetCenter [ChinaUnicom] (Avg RTT: 13.950ms)
-112.90.240.7    se.itunes.apple.com
-112.90.240.7    su.itunes.apple.com
-112.90.240.7    upp.itunes.apple.com
-112.90.240.7    play.itunes.apple.com
-112.90.240.7    client-api.itunes.apple.com
-# API-HK-Akamai-1 [HongKong0] (Avg RTT: 15.067ms)
-23.50.17.214    search.itunes.apple.com
-# API-HK-Akamai-2-AMRadio [HongKong1] (Avg RTT: 18.048ms)
-184.87.100.246  radio.itunes.apple.com
-184.87.100.246  radio-activity.itunes.apple.com
-184.87.100.246  radio-services.itunes.apple.com
-</code></pre><p>(5)you may be should clear DNS Cache.Notice: the command is not the same in    different Mac OS versions. </p>
-<pre><code># 10.10.4 or later:
-sudo killall -HUP mDNSResponder
-# 10.10 ~ 10.10.3:
-sudo discoveryutil mdnsflushcache
-# 10.7 ~ 10.9.5:
-sudo killall -HUP mDNSResponder
-# 10.6 ~ 10.6.8:
-sudo dscacheutil -flushcache
-</code></pre>]]></content>
+    <content type="html"><![CDATA[<p><strong>1.WHAT</strong><br>AppleDNS collections the DNS data in China, and it can be used to solve the problem accessing App Store / Mac App Store / iTunes Store / Apple Music slow.</p><p><strong>2.HOW TO USE</strong><br>(1)Clone repository into your local path everywhere you want.Mine is ~/dev/</p><pre><code>git clone git@github.com:gongjianhui/AppleDNS.git</code></pre><p>(2) into the AppleDNS root path, execute python command and wait several minutes.</p><pre><code>cd ~/dev/AppleDNSpython fetch-timeout.py ChinaUnicom.json</code></pre><p>(3) Generate content.There are three choices: surge,hosts,merlin. Here is hosts.</p><pre><code>python export-configure.py hosts</code></pre><p>(4) Copy the generated content into hosts file.</p><pre><code># Build Date: 2016-11-17T02:38:34.420896 (UTC)# API-1-ChinaNetCenter [ChinaUnicom] (Avg RTT: 13.950ms)112.90.240.7    se.itunes.apple.com112.90.240.7    su.itunes.apple.com112.90.240.7    upp.itunes.apple.com112.90.240.7    play.itunes.apple.com112.90.240.7    client-api.itunes.apple.com# API-HK-Akamai-1 [HongKong0] (Avg RTT: 15.067ms)23.50.17.214    search.itunes.apple.com# API-HK-Akamai-2-AMRadio [HongKong1] (Avg RTT: 18.048ms)184.87.100.246  radio.itunes.apple.com184.87.100.246  radio-activity.itunes.apple.com184.87.100.246  radio-services.itunes.apple.com</code></pre><p>(5)you may be should clear DNS Cache.Notice: the command is not the same in    different Mac OS versions. </p><pre><code># 10.10.4 or later:sudo killall -HUP mDNSResponder# 10.10 ~ 10.10.3:sudo discoveryutil mdnsflushcache# 10.7 ~ 10.9.5:sudo killall -HUP mDNSResponder# 10.6 ~ 10.6.8:sudo dscacheutil -flushcache</code></pre>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;1.WHAT&lt;/strong&gt;&lt;br&gt;AppleDNS collections the DNS data in China, and it’s can be used to solve the problem access App Store / Mac A
+      
+      
+        &lt;p&gt;&lt;strong&gt;1.WHAT&lt;/strong&gt;&lt;br&gt;AppleDNS collections the DNS data in China, and it can be used to solve the problem accessing App Store / Mac 
+      
     
     </summary>
     
@@ -194,93 +118,18 @@ sudo dscacheutil -flushcache
     <published>2016-11-15T09:17:23.000Z</published>
     <updated>2016-11-15T09:18:17.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Note: Developing Applications for iOS(Stanford CS193p)<br><strong>1.Tech Map</strong></p>
-<blockquote>
-<ul>
-<li>Cocoa Touch </li>
-<li>Media</li>
-<li>Core Services</li>
-<li>Core OS</li>
-</ul>
-</blockquote>
-<p><strong>2.Core OS</strong></p>
-<blockquote>
-<ul>
-<li>OSX Kernel </li>
-<li>Power Management</li>
-<li>Mach 3.0</li>
-<li>keychain Access</li>
-<li>BSD</li>
-<li>Certifications</li>
-<li>Sockets</li>
-<li>File System</li>
-<li>Security</li>
-<li>Bonjour</li>
-</ul>
-</blockquote>
-<p><strong>3.Core Services</strong></p>
-<blockquote>
-<ul>
-<li>Collections </li>
-<li>Core Location</li>
-<li>Address Book</li>
-<li>Net Services</li>
-<li>Networking</li>
-<li>Threading</li>
-<li>File Access</li>
-<li>Preferences</li>
-<li>SQLite</li>
-<li>URL Utilities</li>
-</ul>
-</blockquote>
-<p><strong>4.Media</strong></p>
-<blockquote>
-<ul>
-<li>Core audio </li>
-<li>OpenAL</li>
-<li>Audio Mixing</li>
-<li>Audio Recording</li>
-<li>Video Playback</li>
-<li>JPEG,PNG,TIFF</li>
-<li>PDF</li>
-<li>Quartz(2D)</li>
-<li>Core Animation</li>
-<li>OpenGL ES</li>
-</ul>
-</blockquote>
-<p><strong>5.Cocoa Touch</strong></p>
-<blockquote>
-<ul>
-<li>Multi-Touch</li>
-<li>Core Motion</li>
-<li>View Hierarchy</li>
-<li>Localization</li>
-<li>Controls</li>
-<li>Alerts</li>
-<li>Web View</li>
-<li>Map Kit</li>
-<li>Image Picker</li>
-<li>Camera</li>
-</ul>
-</blockquote>
-<p><strong>6.Platform Components</strong></p>
-<blockquote>
-<ul>
-<li>Tools: Xcode、Instruments</li>
-<li>Language：Swift、Objective-C</li>
-<li>Frameworks：Foundation、Core Data、UIKit、Core Motion、Map Kit</li>
-<li>Design Strategy：MVC</li>
-</ul>
-</blockquote>
-]]></content>
+    <content type="html"><![CDATA[<p>Note: Developing Applications for iOS(Stanford CS193p)<br><strong>1.Tech Map</strong></p><blockquote><ul><li>Cocoa Touch </li><li>Media</li><li>Core Services</li><li>Core OS</li></ul></blockquote><p><strong>2.Core OS</strong></p><blockquote><ul><li>OSX Kernel </li><li>Power Management</li><li>Mach 3.0</li><li>keychain Access</li><li>BSD</li><li>Certifications</li><li>Sockets</li><li>File System</li><li>Security</li><li>Bonjour</li></ul></blockquote><p><strong>3.Core Services</strong></p><blockquote><ul><li>Collections </li><li>Core Location</li><li>Address Book</li><li>Net Services</li><li>Networking</li><li>Threading</li><li>File Access</li><li>Preferences</li><li>SQLite</li><li>URL Utilities</li></ul></blockquote><p><strong>4.Media</strong></p><blockquote><ul><li>Core audio </li><li>OpenAL</li><li>Audio Mixing</li><li>Audio Recording</li><li>Video Playback</li><li>JPEG,PNG,TIFF</li><li>PDF</li><li>Quartz(2D)</li><li>Core Animation</li><li>OpenGL ES</li></ul></blockquote><p><strong>5.Cocoa Touch</strong></p><blockquote><ul><li>Multi-Touch</li><li>Core Motion</li><li>View Hierarchy</li><li>Localization</li><li>Controls</li><li>Alerts</li><li>Web View</li><li>Map Kit</li><li>Image Picker</li><li>Camera</li></ul></blockquote><p><strong>6.Platform Components</strong></p><blockquote><ul><li>Tools: Xcode、Instruments</li><li>Language：Swift、Objective-C</li><li>Frameworks：Foundation、Core Data、UIKit、Core Motion、Map Kit</li><li>Design Strategy：MVC</li></ul></blockquote>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Note: Developing Applications for iOS(Stanford CS193p)&lt;br&gt;&lt;strong&gt;1.Tech Map&lt;/strong&gt;&lt;/p&gt;
+      
+      
+        &lt;p&gt;Note: Developing Applications for iOS(Stanford CS193p)&lt;br&gt;&lt;strong&gt;1.Tech Map&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Cocoa Touch &lt;/li&gt;
 &lt;li&gt;Med
+      
     
     </summary>
     
@@ -296,26 +145,14 @@ sudo dscacheutil -flushcache
     <published>2016-09-25T04:13:00.000Z</published>
     <updated>2016-11-18T05:18:19.000Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>1. 学习资源</strong><br><strong>1.1 </strong><a href="http://www.docker.com" title="Docker WebSite" target="_blank" rel="external">Docker 官网</a><br><strong>1.2 </strong><a href="https://hub.docker.com" title="docker hub" target="_blank" rel="external">Docker Hub</a><br><strong>1.3 </strong>推荐入门书籍《<a href="https://yeasy.gitbooks.io/docker_practice/content" target="_blank" rel="external">Docker技术入门与实践</a>》（本书是开源在gitbook上）</p>
-<p><strong>2.</strong> 具体使用<br><strong>2.0 </strong>安装Docker</p>
-<blockquote>
-<p>新版本的Docker提供了对原生Mac OS、Windows安装程序，可以直接在官网下载安装即可。我本地使用的Docker for Mac。</p>
-</blockquote>
-<p><strong>2.1 </strong>在Docker 中运行mysql<br>(1)下载mysql镜像</p>
-<pre><code>docker pull mysql
-</code></pre><p>(2)通过容器，启动mysql镜像</p>
-<pre><code>docker run -d -p 127.0.0.1:3306:3306 --name mysql -v /Users/kevin/Docker/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=&quot;123456&quot; mysql:latest
-</code></pre><p> 命令说明：</p>
-<blockquote>
-<p>docker run : Run a command in a new container<br>-d(detach): 以后台模式运行容器，只能通过网络资源或者共享卷进行I/O数据交互<br>-p (publish):相对于访问主机来讲，是将主机的端口映射到容器的端口；相对于容器来说，是将容器的端口发布给主机使用。此例中-p 127.0.0.1:3306:3306，主机是127.0.0.1、端口是：3306，这样访问主机的3306端口就可以访问容器的3306端口<br>–name :给容器取名<br>-v :将本机的文件目录(/Users/kevin/Docker/mysql/data)挂载到对应的容器目录(/var/lib/mysql)。这样可以通过数据卷实现容器中数据的持久化。<br>-e :环境变量，本例中设置mysql root用户的初始密码为123456</p>
-</blockquote>
-<p>(3)上面已经启动了容器，可以用mysql客户端连接使用了。不需要使用的时候，可以选择停掉。</p>
-<pre><code>docker stop mysql
-</code></pre>]]></content>
+    <content type="html"><![CDATA[<p><strong>1. 学习资源</strong><br><strong>1.1 </strong><a href="http://www.docker.com" title="Docker WebSite" target="_blank" rel="noopener">Docker 官网</a><br><strong>1.2 </strong><a href="https://hub.docker.com" title="docker hub" target="_blank" rel="noopener">Docker Hub</a><br><strong>1.3 </strong>推荐入门书籍《<a href="https://yeasy.gitbooks.io/docker_practice/content" target="_blank" rel="noopener">Docker技术入门与实践</a>》（本书是开源在gitbook上）</p><p><strong>2.</strong> 具体使用<br><strong>2.0 </strong>安装Docker</p><blockquote><p>新版本的Docker提供了对原生Mac OS、Windows安装程序，可以直接在官网下载安装即可。我本地使用的Docker for Mac。</p></blockquote><p><strong>2.1 </strong>在Docker 中运行mysql<br>(1)下载mysql镜像</p><pre><code>docker pull mysql</code></pre><p>(2)通过容器，启动mysql镜像</p><pre><code>docker run -d -p 127.0.0.1:3306:3306 --name mysql -v /Users/kevin/Docker/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=&quot;123456&quot; mysql:latest</code></pre><p> 命令说明：</p><blockquote><p>docker run : Run a command in a new container<br>-d(detach): 以后台模式运行容器，只能通过网络资源或者共享卷进行I/O数据交互<br>-p (publish):相对于访问主机来讲，是将主机的端口映射到容器的端口；相对于容器来说，是将容器的端口发布给主机使用。此例中-p 127.0.0.1:3306:3306，主机是127.0.0.1、端口是：3306，这样访问主机的3306端口就可以访问容器的3306端口<br>–name :给容器取名<br>-v :将本机的文件目录(/Users/kevin/Docker/mysql/data)挂载到对应的容器目录(/var/lib/mysql)。这样可以通过数据卷实现容器中数据的持久化。<br>-e :环境变量，本例中设置mysql root用户的初始密码为123456</p></blockquote><p>(3)上面已经启动了容器，可以用mysql客户端连接使用了。不需要使用的时候，可以选择停掉。</p><pre><code>docker stop mysql</code></pre>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;1. 学习资源&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;1.1 &lt;/strong&gt;&lt;a href=&quot;http://www.docker.com&quot; title=&quot;Docker WebSite&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Do
+      
+      
+        &lt;p&gt;&lt;strong&gt;1. 学习资源&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;1.1 &lt;/strong&gt;&lt;a href=&quot;http://www.docker.com&quot; title=&quot;Docker WebSite&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Do
+      
     
     </summary>
     
@@ -329,45 +166,16 @@ sudo dscacheutil -flushcache
     <link href="https://langping86.github.io/2016/09/05/Java%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/"/>
     <id>https://langping86.github.io/2016/09/05/Java知识梳理/</id>
     <published>2016-09-05T14:46:33.000Z</published>
-    <updated>2016-09-08T06:23:25.000Z</updated>
+    <updated>2018-05-30T14:41:39.748Z</updated>
     
-    <content type="html"><![CDATA[<p>作为一个长期写企业管理软件开发的从业人员，我越来越觉得在“埋头做事”的同时，需要时常“抬头看路”，总结下Java学习路线。<br><strong>{0}Hello World</strong><br>我想大部分的程序员都写过<code>Hello World</code>,但我要说的不仅仅是能在控制台输出<code>Hello World</code>，还包括程序语言的基本功能（变量、分支判断、循环控制、类、接口、对象等）。</p>
-<blockquote>
-<p>通过<code>Hello World</code>，了解基本的开发环境搭建、代码编写、编译、运行、Debug；了解开发工具的基本使用，代码视图、资源视图、调试视图等。</p>
-</blockquote>
-<p><strong>{1}基础</strong></p>
-<blockquote>
-<p>这里说的基础不是一个大而全的东西，也就是最基本、最常用的内容。<br>(1)面向对象（OOP）<br>(2)lang（String、封装类）、Collections、concurrent、io</p>
-</blockquote>
-<p><strong>{2}技能</strong><br>学习技术的目的是为了解决实际问题，在掌握基础的<strong>同时</strong>学习一些技能，通常可让我们更好、更快的解决问题。说技能太泛了，到底我们该学哪些内容？</p>
-<blockquote>
-<p>(1)Spring：IoC、DI、AOP<br>(2)View：Velocity、Freemarker、Html、CSS、JavaScript<br>(3)Web Framework： Struts、SpringMVC、JSF<br>(4)NoSQL：Redis（偏向缓存应用）、MongoDB、HBase<br>(5)SQL：MySql、Oracle<br>(6)Data Access：MyBatis、Hibernate、Spring Data</p>
-</blockquote>
-<p><strong>{3}延伸</strong><br>(1)JVM：从JVM层面分析对象的内存使用、线程的调度运行和延时情况。<br>(2)网络I/O模型</p>
-<blockquote>
-<ul>
-<li>BIO －－》Socket Stream</li>
-<li>NIO －－》Netty，Mina</li>
-<li>AIO －－》JDK7 NIO2</li>
-</ul>
-</blockquote>
-<p>(3)NIO相关的衍生技术</p>
-<blockquote>
-<ol>
-<li>NIO(Java New IO)    与传统IO的区别</li>
-<li>NIO框架：Netty、mina</li>
-<li>分布式服务框架：[Dubbo][1]、[Zookeeper][2]</li>
-</ol>
-</blockquote>
-<p><strong>{4}指引</strong><br>也许我们把上面的都学完了，但是还是做不出一个像样的系统，是因为上面的内容紧紧是内容，如何学并学的快是我们所希望的。推荐两个BLOG，也许会给我们一些启发。</p>
-<blockquote>
-<p>   (1)<a href="http://blog.xdite.net" target="_blank" rel="external">http://blog.xdite.net</a><br>   (2)<a href="http://xiaolai.li" target="_blank" rel="external">http://xiaolai.li</a></p>
-</blockquote>
-]]></content>
+    <content type="html"><![CDATA[<p>作为一个长期写企业管理软件开发的从业人员，我越来越觉得在“埋头做事”的同时，需要时常“抬头看路”，总结下Java学习路线。<br><strong>{0}Hello World</strong><br>我想大部分的程序员都写过<code>Hello World</code>,但我要说的不仅仅是能在控制台输出<code>Hello World</code>，还包括程序语言的基本功能（变量、分支判断、循环控制、类、接口、对象等）。</p><blockquote><p>通过<code>Hello World</code>，了解基本的开发环境搭建、代码编写、编译、运行、Debug；了解开发工具的基本使用，代码视图、资源视图、调试视图等。</p></blockquote><p><strong>{1}基础</strong></p><blockquote><p>这里说的基础不是一个大而全的东西，也就是最基本、最常用的内容。<br>(1)面向对象（OOP）<br>(2)lang（String、封装类）、Collections、concurrent、io</p></blockquote><p><strong>{2}技能</strong><br>学习技术的目的是为了解决实际问题，在掌握基础的<strong>同时</strong>学习一些技能，通常可让我们更好、更快的解决问题。说技能太泛了，到底我们该学哪些内容？</p><blockquote><p>(1)Spring：IoC、DI、AOP<br>(2)View：Velocity、Freemarker、Html、CSS、JavaScript<br>(3)Web Framework： Struts、SpringMVC、JSF<br>(4)NoSQL：Redis（偏向缓存应用）、MongoDB、HBase<br>(5)SQL：MySql、Oracle<br>(6)Data Access：MyBatis、Hibernate、Spring Data</p></blockquote><p><strong>{3}延伸</strong><br>(1)JVM：从JVM层面分析对象的内存使用、线程的调度运行和延时情况。<br>(2)网络I/O模型<br>  > - BIO －－》Socket Stream<br>  > - NIO －－》Netty，Mina<br>  > - AIO －－》JDK7 NIO2</p><p>(3)NIO相关的衍生技术<br>  > 1. NIO(Java New IO)    与传统IO的区别<br>  > 2. NIO框架：Netty、mina<br>  > 3. 分布式服务框架：[Dubbo][1]、[Zookeeper][2]</p><p><strong>{4}指引</strong><br>也许我们把上面的都学完了，但是还是做不出一个像样的系统，是因为上面的内容仅仅是内容，如何学并学的快是我们所希望的。推荐两个BLOG，也许会给我们一些启发。</p><blockquote><p>   (1)<a href="http://blog.xdite.net" target="_blank" rel="noopener">http://blog.xdite.net</a><br>   (2)<a href="http://xiaolai.li" target="_blank" rel="noopener">http://xiaolai.li</a></p></blockquote>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;作为一个长期写企业管理软件开发的从业人员，我越来越觉得在“埋头做事”的同时，需要时常“抬头看路”，总结下Java学习路线。&lt;br&gt;&lt;strong&gt;{0}Hello World&lt;/strong&gt;&lt;br&gt;我想大部分的程序员都写过&lt;code&gt;Hello World&lt;/code&gt;,
+      
+      
+        &lt;p&gt;作为一个长期写企业管理软件开发的从业人员，我越来越觉得在“埋头做事”的同时，需要时常“抬头看路”，总结下Java学习路线。&lt;br&gt;&lt;strong&gt;{0}Hello World&lt;/strong&gt;&lt;br&gt;我想大部分的程序员都写过&lt;code&gt;Hello World&lt;/code&gt;,
+      
     
     </summary>
     
@@ -383,61 +191,17 @@ sudo dscacheutil -flushcache
     <published>2016-09-03T03:50:38.000Z</published>
     <updated>2016-09-04T03:57:51.000Z</updated>
     
-    <content type="html"><![CDATA[<blockquote>
-<p>近期一直在熟悉<strong>Mac OS</strong>系统的使用，对于一个长期使用Windows的用户来说，各方面都需要适应，今天就总结下常用的快捷键，应该基本上可满足日常应用。</p>
-</blockquote>
-<h2 id="切换"><a href="#切换" class="headerlink" title="切换"></a>切换</h2><p><strong>⌘ ＋Tab</strong> 程序之间切换</p>
-<h2 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h2><p><strong>⌘＋H</strong> 隐藏窗口</p>
-<p><strong>⌘＋M</strong> 最小化窗口</p>
-<p><strong>⌘＋N</strong> 新建</p>
-<p><strong>⌘＋O</strong> 打开</p>
-<p><strong>⌘＋S</strong> 保存</p>
-<p><strong>⌘＋Shift＋S</strong> 另存为</p>
-<p><strong>⌘＋P</strong> 打印</p>
-<p><strong>⌘＋W</strong> 关闭</p>
-<p><strong>⌘＋Q</strong> 退出</p>
-<h2 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h2><p><strong>空格键</strong> 选中文件后按下<strong>空格键</strong>可以快速查看（<strong><em>如何快速查看markdown\csv\json等格式？</em></strong>）</p>
-<p><strong>⌘＋A</strong> 全选</p>
-<p><strong>⌘＋I</strong> 现实简介</p>
-<p><strong>⌘＋F</strong> 搜索</p>
-<p><strong>⌘＋C</strong> 复制</p>
-<p><strong>⌘＋V</strong> 粘贴</p>
-<p><strong>⌘＋delete</strong> 删除（⌘＋delete 还可以文字输入时删除光标前的整行）</p>
-<p><strong>⌘＋shift＋delete</strong> 清空回收站</p>
-<p><strong>⌘＋control＋N</strong>        新建文件夹，会将选中文件放入文件夹中</p>
-<h2 id="截屏"><a href="#截屏" class="headerlink" title="截屏"></a>截屏</h2><p><strong>⌘＋shift＋3</strong> 截取整个屏幕</p>
-<p><strong>⌘＋shift＋4</strong> 截取选择区域</p>
-<p><strong>⌘＋shift＋4＋空格</strong> 截取选择窗口</p>
-<h2 id="浏览器-safari"><a href="#浏览器-safari" class="headerlink" title="浏览器 safari"></a>浏览器 safari</h2><p><strong>⌘＋R</strong> 刷新</p>
-<p><strong>⌘＋T</strong> 新建一个选项卡</p>
-<p><strong>⌘＋Z</strong> 打开上一个关闭的选项卡</p>
-<p><strong>⌘＋➕</strong> 放大（当然也可以使用触摸板操作）</p>
-<p><strong>⌘＋➖</strong> 缩小（当然也可以通过触摸板操作）</p>
-<h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><p><strong>control ＋shift＋⎋</strong>  关闭显示器</p>
-<p><strong>⌘＋shift＋esc</strong> 强制退出程序</p>
-<p><strong>⌘＋option ＋⎋</strong> 睡眠</p>
-<p><strong>⌘＋option＋esc</strong> 打开任务管理器</p>
-<p><strong>⌘＋空格</strong> 呼出spolight search（To search for everything）</p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p><strong>option</strong></p>
-<ul>
-<li>当某个应用程序卡死的时候，可以在Dock栏右键选中应用，按下<code>option</code>，可以看到<strong>强制退出</strong></li>
-<li>按下<code>option</code>键，在菜单栏点选wifi图标时，可以看到当前连接网络的详细信息</li>
-</ul>
-<p><strong>option＋shift</strong>    微调，（在最小化窗口的时候，可以按下<code>option＋shift</code> 可以看到最小化的速度减慢了）</p>
-<blockquote>
-<ol>
-<li>另外Mac上快捷键那么多，都靠脑袋记住也不现实，Mac的用户也想到了这一点，推荐一个<a href="https://cheatsheetapp.com/CheatSheet/" target="_blank" rel="external"><strong>CheatSheet</strong></a>应用。</li>
-<li>使用Mac的人不得不去了解下<strong><a href="https://www.alfredapp.com" target="_blank" rel="external">Alfred</a></strong>，spotlight search 功能增强，结合其workflow功能，强大好用。</li>
-</ol>
-</blockquote>
-]]></content>
+    <content type="html"><![CDATA[<blockquote><p>近期一直在熟悉<strong>Mac OS</strong>系统的使用，对于一个长期使用Windows的用户来说，各方面都需要适应，今天就总结下常用的快捷键，应该基本上可满足日常应用。</p></blockquote><h2 id="切换"><a href="#切换" class="headerlink" title="切换"></a>切换</h2><p><strong>⌘ ＋Tab</strong> 程序之间切换</p><h2 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h2><p><strong>⌘＋H</strong> 隐藏窗口</p><p><strong>⌘＋M</strong> 最小化窗口</p><p><strong>⌘＋N</strong> 新建</p><p><strong>⌘＋O</strong> 打开</p><p><strong>⌘＋S</strong> 保存</p><p><strong>⌘＋Shift＋S</strong> 另存为</p><p><strong>⌘＋P</strong> 打印</p><p><strong>⌘＋W</strong> 关闭</p><p><strong>⌘＋Q</strong> 退出</p><h2 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h2><p><strong>空格键</strong> 选中文件后按下<strong>空格键</strong>可以快速查看（<strong><em>如何快速查看markdown\csv\json等格式？</em></strong>）</p><p><strong>⌘＋A</strong> 全选</p><p><strong>⌘＋I</strong> 现实简介</p><p><strong>⌘＋F</strong> 搜索</p><p><strong>⌘＋C</strong> 复制</p><p><strong>⌘＋V</strong> 粘贴</p><p><strong>⌘＋delete</strong> 删除（⌘＋delete 还可以文字输入时删除光标前的整行）</p><p><strong>⌘＋shift＋delete</strong> 清空回收站</p><p><strong>⌘＋control＋N</strong>        新建文件夹，会将选中文件放入文件夹中</p><h2 id="截屏"><a href="#截屏" class="headerlink" title="截屏"></a>截屏</h2><p><strong>⌘＋shift＋3</strong> 截取整个屏幕</p><p><strong>⌘＋shift＋4</strong> 截取选择区域</p><p><strong>⌘＋shift＋4＋空格</strong> 截取选择窗口</p><h2 id="浏览器-safari"><a href="#浏览器-safari" class="headerlink" title="浏览器 safari"></a>浏览器 safari</h2><p><strong>⌘＋R</strong> 刷新</p><p><strong>⌘＋T</strong> 新建一个选项卡</p><p><strong>⌘＋Z</strong> 打开上一个关闭的选项卡</p><p><strong>⌘＋➕</strong> 放大（当然也可以使用触摸板操作）</p><p><strong>⌘＋➖</strong> 缩小（当然也可以通过触摸板操作）</p><h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><p><strong>control ＋shift＋⎋</strong>  关闭显示器</p><p><strong>⌘＋shift＋esc</strong> 强制退出程序</p><p><strong>⌘＋option ＋⎋</strong> 睡眠</p><p><strong>⌘＋option＋esc</strong> 打开任务管理器</p><p><strong>⌘＋空格</strong> 呼出spolight search（To search for everything）</p><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p><strong>option</strong></p><ul><li>当某个应用程序卡死的时候，可以在Dock栏右键选中应用，按下<code>option</code>，可以看到<strong>强制退出</strong></li><li>按下<code>option</code>键，在菜单栏点选wifi图标时，可以看到当前连接网络的详细信息</li></ul><p><strong>option＋shift</strong>    微调，（在最小化窗口的时候，可以按下<code>option＋shift</code> 可以看到最小化的速度减慢了）</p><blockquote><ol><li>另外Mac上快捷键那么多，都靠脑袋记住也不现实，Mac的用户也想到了这一点，推荐一个<a href="https://cheatsheetapp.com/CheatSheet/" target="_blank" rel="noopener"><strong>CheatSheet</strong></a>应用。</li><li>使用Mac的人不得不去了解下<strong><a href="https://www.alfredapp.com" target="_blank" rel="noopener">Alfred</a></strong>，spotlight search 功能增强，结合其workflow功能，强大好用。</li></ol></blockquote>]]></content>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
+      
+      
+        &lt;blockquote&gt;
 &lt;p&gt;近期一直在熟悉&lt;strong&gt;Mac OS&lt;/strong&gt;系统的使用，对于一个长期使用Windows的用户来说，各方面都需要适应，今天就总结下常用的快捷键，应该基本上可满足日常应用。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;切换&quot;&gt;&lt;
+      
     
     </summary>
     
@@ -453,16 +217,14 @@ sudo dscacheutil -flushcache
     <published>2016-08-31T13:11:13.000Z</published>
     <updated>2016-09-04T03:56:39.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="中英文切换"><a href="#中英文切换" class="headerlink" title="中英文切换"></a>中英文切换</h2><p>点亮<code>caps lock</code>可输入英文，需要输入大写英文再按下<code>shift</code>即可。</p>
-<h2 id="标点符号"><a href="#标点符号" class="headerlink" title="标点符号"></a>标点符号</h2><p><code>shift + option + B</code>  符号、数字甚至是单位可供选择</p>
-<p>shift+option+9 分隔符<code>·</code></p>
-<h2 id="字符表情"><a href="#字符表情" class="headerlink" title="字符表情"></a>字符表情</h2><p><code>shift ＋ 6</code></p>
-<h2 id="生僻字"><a href="#生僻字" class="headerlink" title="生僻字"></a>生僻字</h2><p>同时输入分拆的字音，按下<code>shift ＋ space</code><br>如：森，输入<code>mu mu mu</code>，按下<code>shift ＋ space</code></p>
-]]></content>
+    <content type="html"><![CDATA[<h2 id="中英文切换"><a href="#中英文切换" class="headerlink" title="中英文切换"></a>中英文切换</h2><p>点亮<code>caps lock</code>可输入英文，需要输入大写英文再按下<code>shift</code>即可。</p><h2 id="标点符号"><a href="#标点符号" class="headerlink" title="标点符号"></a>标点符号</h2><p><code>shift + option + B</code>  符号、数字甚至是单位可供选择</p><p>shift+option+9 分隔符<code>·</code></p><h2 id="字符表情"><a href="#字符表情" class="headerlink" title="字符表情"></a>字符表情</h2><p><code>shift ＋ 6</code></p><h2 id="生僻字"><a href="#生僻字" class="headerlink" title="生僻字"></a>生僻字</h2><p>同时输入分拆的字音，按下<code>shift ＋ space</code><br>如：森，输入<code>mu mu mu</code>，按下<code>shift ＋ space</code></p>]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;中英文切换&quot;&gt;&lt;a href=&quot;#中英文切换&quot; class=&quot;headerlink&quot; title=&quot;中英文切换&quot;&gt;&lt;/a&gt;中英文切换&lt;/h2&gt;&lt;p&gt;点亮&lt;code&gt;caps lock&lt;/code&gt;可输入英文，需要输入大写英文再按下&lt;code&gt;shift&lt;/code
+      
+      
+        &lt;h2 id=&quot;中英文切换&quot;&gt;&lt;a href=&quot;#中英文切换&quot; class=&quot;headerlink&quot; title=&quot;中英文切换&quot;&gt;&lt;/a&gt;中英文切换&lt;/h2&gt;&lt;p&gt;点亮&lt;code&gt;caps lock&lt;/code&gt;可输入英文，需要输入大写英文再按下&lt;code&gt;shift&lt;/code
+      
     
     </summary>
     
@@ -478,20 +240,11 @@ sudo dscacheutil -flushcache
     <published>2016-08-31T04:56:17.000Z</published>
     <updated>2016-09-04T03:40:16.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br><a id="more"></a> </p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br><a id="more"></a> </p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;br&gt;
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;br&gt;
     
     </summary>
     

@@ -98,22 +98,18 @@
 
 
 
-<meta name="description" content="Create Homestead Env in DockerThe main content is from:https://store.docker.com/community/images/shincoder/homestead
-1.Pull homestead imagedocker pull shincoder/homestead:php7.0
-2.Clone &amp;amp;&amp;amp; Edi">
+<meta name="description" content="Create Homestead Env in DockerThe main content is from:https://store.docker.com/community/images/shincoder/homestead 1.Pull homestead image1$ docker pull shincoder/homestead:php7.0 2.Clone &amp;amp;&amp;amp;">
+<meta name="keywords" content="Docker">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Create Homestead Env in Docker">
 <meta property="og:url" content="https://langping86.github.io/2017/03/05/Create-Homestead-Env-in-Docker/index.html">
 <meta property="og:site_name" content="｛am｝shuanbao">
-<meta property="og:description" content="Create Homestead Env in DockerThe main content is from:https://store.docker.com/community/images/shincoder/homestead
-1.Pull homestead imagedocker pull shincoder/homestead:php7.0
-2.Clone &amp;amp;&amp;amp; Edi">
-<meta property="og:updated_time" content="2017-09-11T14:31:33.000Z">
+<meta property="og:description" content="Create Homestead Env in DockerThe main content is from:https://store.docker.com/community/images/shincoder/homestead 1.Pull homestead image1$ docker pull shincoder/homestead:php7.0 2.Clone &amp;amp;&amp;amp;">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-05-30T15:03:13.716Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Create Homestead Env in Docker">
-<meta name="twitter:description" content="Create Homestead Env in DockerThe main content is from:https://store.docker.com/community/images/shincoder/homestead
-1.Pull homestead imagedocker pull shincoder/homestead:php7.0
-2.Clone &amp;amp;&amp;amp; Edi">
+<meta name="twitter:description" content="Create Homestead Env in DockerThe main content is from:https://store.docker.com/community/images/shincoder/homestead 1.Pull homestead image1$ docker pull shincoder/homestead:php7.0 2.Clone &amp;amp;&amp;amp;">
 
 
 
@@ -341,26 +337,18 @@
       
 
       
-        <h1 id="Create-Homestead-Env-in-Docker"><a href="#Create-Homestead-Env-in-Docker" class="headerlink" title="Create Homestead Env in Docker"></a><strong>Create Homestead Env in Docker</strong></h1><p>The main content is from:<a href="https://store.docker.com/community/images/shincoder/homestead" target="_blank" rel="external">https://store.docker.com/community/images/shincoder/homestead</a></p>
-<h2 id="1-Pull-homestead-image"><a href="#1-Pull-homestead-image" class="headerlink" title="1.Pull homestead image"></a><strong>1.Pull homestead image</strong></h2><pre><code>docker pull shincoder/homestead:php7.0
-</code></pre><h2 id="2-Clone-amp-amp-Edit-docker-compose-yml"><a href="#2-Clone-amp-amp-Edit-docker-compose-yml" class="headerlink" title="2.Clone &amp;&amp; Edit docker-compose.yml"></a><strong>2.Clone &amp;&amp; Edit docker-compose.yml</strong></h2><pre><code>git clone https://github.com/shincoder/homestead-docker.git
-</code></pre><p>rename docker-compose.dist.yml to docker-compose.yml then edit the file with you own paths and ports.</p>
+        <h1 id="Create-Homestead-Env-in-Docker"><a href="#Create-Homestead-Env-in-Docker" class="headerlink" title="Create Homestead Env in Docker"></a><strong>Create Homestead Env in Docker</strong></h1><p>The main content is from:<a href="https://store.docker.com/community/images/shincoder/homestead" target="_blank" rel="noopener">https://store.docker.com/community/images/shincoder/homestead</a></p>
+<h2 id="1-Pull-homestead-image"><a href="#1-Pull-homestead-image" class="headerlink" title="1.Pull homestead image"></a><strong>1.Pull homestead image</strong></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker pull shincoder/homestead:php7.0</span><br></pre></td></tr></table></figure>
+<h2 id="2-Clone-amp-amp-Edit-docker-compose-yml"><a href="#2-Clone-amp-amp-Edit-docker-compose-yml" class="headerlink" title="2.Clone &amp;&amp; Edit docker-compose.yml"></a><strong>2.Clone &amp;&amp; Edit docker-compose.yml</strong></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/shincoder/homestead-docker.git</span><br></pre></td></tr></table></figure>
+<p>rename docker-compose.dist.yml to docker-compose.yml then edit the file with your own paths and ports.</p>
 <h2 id="3-Start-your-containers"><a href="#3-Start-your-containers" class="headerlink" title="3.Start your containers"></a><strong>3.Start your containers</strong></h2><p>There are only two containers to run. web container ( includes everything except your database ), and mariadb container.</p>
-<pre><code>sudo docker-compose up -d
-</code></pre><h2 id="4-SSH-into-the-container-password-secret"><a href="#4-SSH-into-the-container-password-secret" class="headerlink" title="4.SSH into the container (password: secret):"></a><strong>4.SSH into the container (password: secret):</strong></h2><pre><code>ssh -p 2222 homestead@localhost
-</code></pre><h2 id="5-Create-Laravel-application"><a href="#5-Create-Laravel-application" class="headerlink" title="5.Create Laravel application"></a><strong>5.Create Laravel application</strong></h2><pre><code> # update composer
-composer selfupdate
-# config mirror in China
-composer config -g repo.packagist composer https://packagist.phpcomposer.com 
-# install laravel installer
-composer global require &quot;laravel/installer&quot;
-# install laravel &amp;&amp; create an app
-cd /apps
-laravel new myapp
-</code></pre><p>The mirror:<a href="https://pkg.phpcomposer.com" target="_blank" rel="external">https://pkg.phpcomposer.com</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo docker-compose up <span class="_">-d</span></span><br></pre></td></tr></table></figure>
+<h2 id="4-SSH-into-the-container-password-secret"><a href="#4-SSH-into-the-container-password-secret" class="headerlink" title="4.SSH into the container (password: secret):"></a><strong>4.SSH into the container (password: secret):</strong></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -p 2222 homestead@localhost</span><br></pre></td></tr></table></figure>
+<h2 id="5-Create-Laravel-application"><a href="#5-Create-Laravel-application" class="headerlink" title="5.Create Laravel application"></a><strong>5.Create Laravel application</strong></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment"># update composer</span></span><br><span class="line">composer selfupdate</span><br><span class="line"><span class="comment"># config mirror in China</span></span><br><span class="line">composer config -g repo.packagist composer https://packagist.phpcomposer.com </span><br><span class="line"><span class="comment"># install laravel installer</span></span><br><span class="line">composer global require <span class="string">"laravel/installer"</span></span><br><span class="line"><span class="comment"># install laravel &amp;&amp; create an app</span></span><br><span class="line"><span class="built_in">cd</span> /apps</span><br><span class="line">laravel new myapp</span><br></pre></td></tr></table></figure>
+<p>The mirror:<a href="https://pkg.phpcomposer.com" target="_blank" rel="noopener">https://pkg.phpcomposer.com</a></p>
 <h2 id="6-Add-a-virtual-host-Running-more-apps-in-one-Homestead"><a href="#6-Add-a-virtual-host-Running-more-apps-in-one-Homestead" class="headerlink" title="6.Add a virtual host(Running more apps in one Homestead)"></a><strong>6.Add a virtual host(Running more apps in one Homestead)</strong></h2><p>Assuming you mapped your apps folder to /apps (you can change mappings in the docker-compose.yml file, it’s prefered to use absolute paths), you can do:</p>
-<pre><code>cd / &amp;&amp; ./serve.sh myapp.dev /apps/myapp/public
-</code></pre><p>In the host(<strong>Local</strong>), update /etc/hosts to include your app domain:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> / &amp;&amp; ./serve.sh myapp.dev /apps/myapp/public</span><br></pre></td></tr></table></figure>
+<p>In the host(<strong>Local</strong>), update /etc/hosts to include your app domain:</p>
 <pre><code>127.0.0.1               myapp.dev
 </code></pre><h2 id="QA"><a href="#QA" class="headerlink" title="QA"></a><strong>QA</strong></h2><ol>
 <li>Maybe you will get Permission denied when you are adding a virtual host<blockquote>
@@ -561,7 +549,7 @@ laravel new myapp
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Create-Homestead-Env-in-Docker"><span class="nav-number">1.</span> <span class="nav-text">Create Homestead Env in Docker</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Pull-homestead-image"><span class="nav-number">1.1.</span> <span class="nav-text">1.Pull homestead image</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Clone-amp-amp-Edit-docker-compose-yml"><span class="nav-number">1.2.</span> <span class="nav-text">2.Clone && Edit docker-compose.yml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Start-your-containers"><span class="nav-number">1.3.</span> <span class="nav-text">3.Start your containers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-SSH-into-the-container-password-secret"><span class="nav-number">1.4.</span> <span class="nav-text">4.SSH into the container (password: secret):</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Create-Laravel-application"><span class="nav-number">1.5.</span> <span class="nav-text">5.Create Laravel application</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-Add-a-virtual-host-Running-more-apps-in-one-Homestead"><span class="nav-number">1.6.</span> <span class="nav-text">6.Add a virtual host(Running more apps in one Homestead)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QA"><span class="nav-number">1.7.</span> <span class="nav-text">QA</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Create-Homestead-Env-in-Docker"><span class="nav-number">1.</span> <span class="nav-text">Create Homestead Env in Docker</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Pull-homestead-image"><span class="nav-number">1.1.</span> <span class="nav-text">1.Pull homestead image</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Clone-amp-amp-Edit-docker-compose-yml"><span class="nav-number">1.2.</span> <span class="nav-text">2.Clone &amp;&amp; Edit docker-compose.yml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Start-your-containers"><span class="nav-number">1.3.</span> <span class="nav-text">3.Start your containers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-SSH-into-the-container-password-secret"><span class="nav-number">1.4.</span> <span class="nav-text">4.SSH into the container (password: secret):</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Create-Laravel-application"><span class="nav-number">1.5.</span> <span class="nav-text">5.Create Laravel application</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-Add-a-virtual-host-Running-more-apps-in-one-Homestead"><span class="nav-number">1.6.</span> <span class="nav-text">6.Add a virtual host(Running more apps in one Homestead)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QA"><span class="nav-number">1.7.</span> <span class="nav-text">QA</span></a></li></ol></li></ol></div>
             
 
           </div>
